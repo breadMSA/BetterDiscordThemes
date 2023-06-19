@@ -1,0 +1,63 @@
+/**
+* @name Orange Train
+* @version 1.2
+* @author Jerry
+* @description Спасибо тебе что установил эту тему! :3
+*/
+@import url("https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css");
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+@import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
+:root {
+--background-image: url('https://w.forfun.com/fetch/af/afd8030beca0137c9be92019b4957a01.jpeg');
+--background-image-blur: 0px;
+--background-image-size: cover;
+--background-image-position: center;
+--popout-modal-image: url('https://c.wallhere.com/photos/16/5d/bath_towel_sky_night-1200550.jpg!d');
+--popout-modal-blur: 10px;
+--popout-modal-size: cover;
+--popout-modal-position: center;
+--home-button-image: url('https://steamuserimages-a.akamaihd.net/ugc/795363200141114581/4392EC75CF183D04054EC6807EB3AE3CE8C021B7/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false');
+--home-button-size: cover;
+--home-button-position: center;
+--serverlist-brightness: 0.4;
+--left-brightness: 0.4;
+--middle-brightness: 0.5;
+--right-brightness: 0.3;
+--popout-modal-brightness: 0;
+--gradient-primary: 922,53,13; 
+--gradient-secondary: 41,61,38;
+--gradient-direction: 185deg;
+--tint-colour: 255,51,159;
+--tint-brightness: 0;
+--window-padding: 13px;
+--HSL-server-icon-size: 45px;
+--HSL-server-spacing: 20px;
+--window-roundness: 25px;
+--scrollbar-colour: #ffffff0d;
+--link-colour: #00f4a3;
+--update-notice-1: none;
+--rs-online-color: #43e49b;
+--rs-idle-color: #f7b33f;
+--rs-dnd-color: #fa1d1d;
+--rs-offline-color: #9ca0a5;
+--rs-streaming-color: #6826da;
+--rs-invisible-color: #747f8d80;
+}
+.wordmark-2iDDfm.wordmarkWindows-1v0lYD {
+  width: auto;
+  height: 5px;
+  padding:  4px;
+  line-height: 29px;
+  font-size: 0.9em;
+  color: var(--text-normal); }
+.wordmark-2iDDfm.wordmarkWindows-1v0lYD:before, .wordmark-2iDDfm.wordmarkWindows-1v0lYD:after {
+    position: relative;
+    width: auto;
+    height: 5px; }
+.wordmark-2iDDfm.wordmarkWindows-1v0lYD:before {
+    content: "DISCORD";
+    font-weight: 300; }
+.wordmark-2iDDfm.wordmarkWindows-1v0lYD:after {
+    content: " 𝐛𝐲  𝐉𝐞𝐫𝐫𝐲"; }
+    .wordmark-2iDDfm.wordmarkWindows-1v0lYD svg {
+    display: none; }
