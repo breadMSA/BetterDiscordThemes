@@ -24,4 +24,6 @@
     --backgroundsize: cover;
     --popoutsize: cover;
     --backdropsize: cover;
+    --home-icon-image: url(https://www.icegif.com/wp-content/uploads/2022/11/icegif-1061.gif);
+    --home-icon-image-position: center center;
 }
