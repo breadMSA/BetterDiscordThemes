@@ -8,7 +8,8 @@
 @import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
 @import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
 :root {
---background-image: url('https://i.ytimg.com/vi/QeINFcVOHtU/maxresdefault.jpg');
+/* --background-image: url('https://i.ytimg.com/vi/QeINFcVOHtU/maxresdefault.jpg'); */
+--background-image: url('https://w.forfun.com/fetch/af/afd8030beca0137c9be92019b4957a01.jpeg');
 --background-image-blur: 0px;
 --background-image-size: cover;
 --background-image-position: center;
