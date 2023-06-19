@@ -1,0 +1,72 @@
+/**
+* @name genshin impact ayaka fanart wallpaper
+* @version 3.20
+* @description If there is an error, report it under the comments.
+* @author Unknown1Hz
+* @authorLink https://dsc.bio/Unknown1Hz
+*/
+@import url("https://asdamsa.github.io/discord-theme/naat.v3.css");
+@import url('https://fonts.googleapis.com/css2?family=Mali');
+@import url('https://codedotspectra.github.io/themes/core/custom-font.css');
+:root {
+--main-theme-color: #15F4FFFF;
+--theme-transparency: #000000AA;
+--theme-background-image: url('https://asdamsa.github.io/discord-theme/ayaka/wallpeper.jpg');
+--home-icon-image: url('https://asdamsa.github.io/discord-theme/ayaka/icon.jpg');
+--home-icon-image-zoom: 100%;
+--home-icon-image-position: center;
+--server-listing-width: 72px;
+--font-size: 100%;
+--mention-color: #faa61a0d;
+--mention-sider: #17EFFAFF;
+--mention-hover-color: #faa61a14;
+--category-hover-color: #13D7E8FF;
+--unread-server-animation: rainbow;
+--video-screen-button-background-color: #c8c8c833;
+--video-screen-button-foreground-color: #ffffffff;
+--video-screen-button-background-hovor-color: #c8c8c866;
+--video-screen-button-foreground-hovor-color: #ffffffff;
+--member-listing-role-color: #21FFFBFF;
+--small-user-popout-background-image: url('https://i.imgur.com/U0UqpLC.jpg');
+--small-user-popout-background-transparency: #00000089;
+--small-user-popout-background-image-position: top;
+--big-user-popout-background-image: url('https://i.imgur.com/j1Z6HVc.jpg');
+--big-user-popout-background-transparency: #000000A0;
+--big-user-popout-background-image-position: center;
+--code-markup-background-color: #00000099;
+--code-markup-border: 1px solid transparent;
+--message-box-transparency: #00000099;
+--embed-background-transparency: #00000099;
+--message-hover-buttons-background: #000000CB;
+--context-menu-transparency: #15B4BCCC;
+--add-discover-icon-transparency: #10C6C943;
+--add-discover-icon-color: #40F0FFFF;
+--channel-limit-count-color: #2CFCFFFF;
+--channel-limit-background-left: #c8c8c81a;
+--channel-limit-background-right: #19DCE53E;
+--scrollbar-color: #16C0C8D6;
+--unread-message-divider-color: #f04747;
+--unread-message-divider-font-color: #ffffff;
+--new-messages-bar-background-color: #7289da;
+--new-messages-bar-font-color: #ffffff;
+--emoji-menu-background-color: #ffffff;
+--emoji-menu-sider-background-color: #ffffff;
+--emoji-menu-server-header-background-color: #ffffff;
+--emoji-menu-bottom-bar-background-color: #ffffff;
+--emoji-menu-search-bar-background-color: #ffffff;
+--message-search-menu-background-color: #000000cc;
+--message-search-container-background-color: #00000099;
+--message-search-result-background-color: #c8c8c80d;
+--text-voice-channel-color: #8e9297ff;
+--text-voice-channel-hover-color: #0DD4DEFF;
+--text-voice-channel-selected-text-color: #1AFBFFFF;
+--unread-text-channel-color: #DF21FFFF;
+--unread-text-channel-bubble-color: #D224FFFF;
+--folder-background-color: #2f3136;
+--expanded-folder-background-color: #00000000;
+--reaction-emoji-background-color: #00000000;
+--reaction-emoji-border-color: 1px solid transparent;
+--reaction-emoji-hover-background-color: #ffffff1a;
+--reaction-emoji-hover-border-color: #ffffff33;
+--customFont: 'Mali';
+}
