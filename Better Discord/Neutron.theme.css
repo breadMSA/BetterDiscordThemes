@@ -1,0 +1,38 @@
+/**
+* @name Pink1
+* @version 0.1
+* @description made by 021
+* @author 021
+* @website https://vsthemes.org/user/%D0%9B%D1%8E%D0%91%D0%B8%D0%9C%D0%B8%D0%99/
+*/
+@import url("https://codedotspectra.github.io/themes/themes-cores/neutron8.css");
+@import url('https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover');
+:root {
+--themeColor1: #DC00BDFF;
+--themeColor2: #7041E5FF;
+--customFont: 'Irish Grover';
+--homeImage: url('https://i.imgur.com/tG3mTmb.gif');
+--homeImageSize: cover;
+--backgroundColor: #1C0018FF;
+--backgroundImage: url('https://i.imgur.com/RYaAZqy.jpg');
+--backgroundPosition: left;
+--backgroundSize: 100% 100%;
+--backgroundRepeat: no-repeat;
+--backgroundBlur: 0px;
+--backgroundOpacity: 0.75;
+--rs-small-spacing: 0px;
+--rs-medium-spacing: 0px;
+--rs-large-spacing: 0px;
+--rs-small-width: 4px;
+--rs-medium-width: 9px;
+--rs-large-width: 1px;
+--rs-avatar-shape: 29%;
+--rs-online-color: #00B517FF;
+--rs-idle-color: #EEFA00FF;
+--rs-dnd-color: #F00000FF;
+--rs-offline-color: #FFFFFFFF;
+--rs-streaming-color: #00E3FFFF;
+--rs-invisible-color: #000000FF;
+--rs-phone-visible: block;
+}
