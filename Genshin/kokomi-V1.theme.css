@@ -11,7 +11,6 @@
 :root {
     --transparencycolor: 0,0,0;
     --transparencyalpha: 0.15;
-    --messagetransparency: 0.0;
     --guildchanneltransparency: 0.3;
     --memberlistransparency: 0;
     --accentcolor: 154,201,238;
