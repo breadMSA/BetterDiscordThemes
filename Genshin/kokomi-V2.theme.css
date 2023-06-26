@@ -9,11 +9,8 @@
 */
 @import url(https://vsthemes.org/uploads/generator/client/BasicBackground.css);
 :root {
-    --transparencycolor: 0,0,0;
-    --transparencyalpha: 0.15;
-    --guildchanneltransparency: 0.3;
     --memberlistransparency: 0;
-    --accentcolor: 154,201,238;
+    --accentcolor: 114,137,218;
     --background: url("https://vsthemes.org/uploads/posts/2022-03/1648213398_genshin-impact-sangonomiya-kokomi-wallpaper-2880x1800_8.webp");
     --backdrop: rgba(0,0,0,0.2);
     --backgroundblur: 0px;
