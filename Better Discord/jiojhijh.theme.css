@@ -19,11 +19,11 @@
   --accentcolor2: 255,115,250;
   --linkcolor: 0,176,244;
   --mentioncolor: 250,166,26;
-  --textbrightest: 255,255,255;
-  --textbrighter: 222,222,222;
-  --textbright: 185,185,185;
-  --textdark: 140,140,140;
-  --textdarker: 115,115,115;
+  --textbrightest: 80,80,80;
+  --textbrighter: 80,80,80;
+  --textbright: 80,80,80;
+  --textdark: 80,80,80;
+  --textdarker: 80,80,80;
   --textdarkest: 80,80,80;
   --font: gg sans;
   --backgroundaccent: 50,50,50;
