@@ -24,4 +24,11 @@
     --backgroundsize: cover;
     --popoutsize: cover;
     --backdropsize: cover;
+    --textbrightest: 0,0,0;
+    --textbrighter: 0,0,0;
+    --textbright: 0,0,0;
+    --textdark: 0,0,0;
+    --textdarker: 0,0,0;
+    --textdarkest: 0,0,0;
+    --font: gg sans;
 }
