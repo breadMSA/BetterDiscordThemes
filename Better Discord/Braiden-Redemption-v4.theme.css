@@ -33,7 +33,7 @@
   --background-invert: 0%;
   --background-blur: 0px;
   --background-overlay: rgb(0,0,0,0.44);
-  --user-popout-image: url('https://images2.alphacoders.com/782/782992.png');
+  --user-popout-image: url('https://media.tenor.com/SlgI7OSVYGoAAAAd/honkai-star-rail-honkai.gif');
   --user-popout-position: center;
   --user-popout-size: cover;
   --user-popout-repeat: no-repeat;
@@ -43,8 +43,8 @@
   --user-popout-saturation: 100%;
   --user-popout-grayscale: 0%;
   --user-popout-invert: 0%;
-  --user-popout-blur: 0px;
-  --user-modal-image: url('https://media.tenor.com/01-wdpF_EJ0AAAAC/aqua.gif');
+  --user-popout-blur: 1px;
+  --user-modal-image: url('https://media.tenor.com/JCXnn--HXegAAAAd/yae-yae-miko.gif');
   --user-modal-position: center;
   --user-modal-size: cover;
   --user-modal-repeat: no-repeat;
