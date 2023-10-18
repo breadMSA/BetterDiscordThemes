@@ -55,7 +55,7 @@
   --user-modal-grayscale: 0%;
   --user-modal-invert: 0%;
   --user-modal-blur: 0px;
-  --home-icon: url('https://media.tenor.com/Z-qCHXJsDwoAAAAC/kafka.gif');
+  --home-icon-image: url('https://media.tenor.com/Z-qCHXJsDwoAAAAC/kafka.gif');
   --home-position: top center;
   --home-size: 90px;
   --channel-unread: #FF1100;
