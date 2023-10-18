@@ -10,10 +10,12 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap');
-/*
+
 @import url('https://clearvision.github.io/ClearVision-v6/main.css');
-*/
+
+/*
 @import url('https://raw.githubusercontent.com/breadMSA/ClearVision-v6/master/main.css');
+*/
 @import url('https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css');
 
 :root {
@@ -23,7 +25,7 @@
   --danger-color: #982929;
   --url-color: #FF0000;
   --background-image: url('https://i.imgur.com/4xxBarn.jpg');
-  --background-shading: 100%;
+  --background-shading: 0%;
   --background-position: center;
   --background-size: cover;
   --background-repeat: no-repeat;
