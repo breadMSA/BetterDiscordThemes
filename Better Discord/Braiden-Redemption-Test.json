@@ -1,0 +1,110 @@
+{
+    "name": "Braiden-Redemption-v5",
+    "description": "Highly customizable and beautiful theme for BetterDiscord.",
+    "version": "6.3.0",
+    "authors": [
+        {
+            "name": "ClearVision Team"
+        }
+    ],
+    "source": "https://github.com/ClearVision/ClearVision-v6",
+    "website": "https://clearvision.github.io",
+    "invite": "7pNUC9C",
+    "fonts": {
+        "main-font": "Ubuntu",
+        "code-font": "Consolas"
+    },
+    "background": {
+        "url": "https://i.imgur.com/4xxBarn.jpg",
+        "position": "center",
+        "size": "cover",
+        "repeat": "no-repeat",
+        "attachment": "fixed",
+        "brightness": "100%",
+        "contrast": "100%",
+        "saturation": "100%",
+        "grayscale": "0%",
+        "invert": "0%",
+        "blur": "0px",
+        "overlay": "rgba(0,0,0,0.6)"
+    },
+    "user-popout": {
+        "image": "https://media.tenor.com/SlgI7OSVYGoAAAAd/honkai-star-rail-honkai.gif",
+        "position": "center",
+        "size": "cover",
+        "repeat": "no-repeat",
+        "attachment": "fixed",
+        "brightness": "100%",
+        "contrast": "100%",
+        "saturation": "100%",
+        "grayscale": "0%",
+        "invert": "0%",
+        "blur": "1px"
+    },
+    "user-modal": {
+        "image": "https://media.tenor.com/JCXnn--HXegAAAAd/yae-yae-miko.gif",
+        "position": "center",
+        "size": "cover",
+        "repeat": "no-repeat",
+        "attachment": "fixed",
+        "brightness": "100%",
+        "contrast": "100%",
+        "saturation": "100%",
+        "grayscale": "0%",
+        "invert": "0%",
+        "blur": "0px"
+    },
+    "home-icon": {
+        "url": "https://media.tenor.com/cbZuTajbyr0AAAAd/kafka-honkai-star-rail.gif",
+        "position": "center",
+        "size": "90px"
+    },
+    "colors": {
+        "main-color": "#6727E6",
+        "hover-color": "#B31E1E",
+        "success-color": "#43b581",
+        "danger-color": "#982929",
+        "url-color": "#FF0000",
+        "channel-unread": "#FF0000",
+        "channel-color": "rgba(255,255,255,0.65)",
+        "muted-color": "rgba(255,255,255,0.1)",
+        "online-color": "#43b581",
+        "idle-color": "#faa61a",
+        "dnd-color": "#9C27B0",
+        "streaming-color": "#009688",
+        "offline-color": "#808080"
+    },
+    "sizes": {
+        "channels-width": "220px",
+        "members-width": "240px",
+        "HSL-server-icon-size": "45px",
+        "HSL-server-spacing": "10px"
+    },
+    "backdrop": {
+        "overlay": "rgba(0,0,0,0.8)",
+        "image": "https://i.imgur.com/4xxBarn.jpg",
+        "position": "center",
+        "size": "cover",
+        "repeat": "no-repeat",
+        "attachment": "fixed",
+        "brightness": "100%",
+        "contrast": "100%",
+        "saturation": "100%",
+        "invert": "0%",
+        "grayscale": "0%",
+        "sepia": "0%",
+        "blur": "0px"
+    },
+    "HSL": {
+        "server-icon-size": "45px",
+        "server-spacing": "10px"
+    },
+    "rawColors": {
+        "main-color": "#6727E6",
+        "hover-color": "#B31E1E",
+        "success-color": "#43b581",
+        "danger-color": "#982929",
+        "url-color": "#FF0000"
+    },
+    "spec": 2
+}
