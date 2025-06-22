@@ -1,0 +1,85 @@
+/**
+ * @name ClearVision V7 for BetterDiscord
+ * @author ClearVision Team
+ * @version 7.0.1
+ * @description Highly customizable theme for BetterDiscord.
+ * @source https://github.com/ClearVision/ClearVision-v7
+ * @website https://clearvision.github.io
+ * @invite dHaSxn3
+ */
+/* IMPORT CSS */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap');
+
+/* SETTINGS */
+:root {
+  /* ACCENT COLORS */
+  --main-color: #6727E6; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+  --hover-color: #B31E1E; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+  --success-color: #43b581; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
+  --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+  /* STATUS COLORS */
+  --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
+  --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+  --dnd-color: #9C27B0; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+  --streaming-color: #009688; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+  --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+  /* APP BACKGROUND */
+  --background-shading-percent: 0%; /* app background shading amount (0 for complete smoothness) [default: 100%] */
+  --background-image: url('https://i.imgur.com/4xxBarn.jpg'); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
+  --background-position: center; /* app background position [default: center] */
+  --background-size: cover; /* app background size (px) [default: cover] */
+  --background-attachment: fixed; /* app background attachment [default: fixed] */
+  --background-filter: brightness(100%) contrast(100%) saturate(100%) grayscale(0%) invert(0%) blur(0px); /* app background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: saturate(calc(var(--saturation-factor, 1) * 1))] */
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: url('https://media.tenor.com/SlgI7OSVYGoAAAAd/honkai-star-rail-honkai.gif'); /* user popout background image (link must be HTTPS) (not applied to nitro users) [default: var(--background-image)] */
+  --user-popout-position: center; /* user popout position [default: var(--background-position)] */
+  --user-popout-size: cover; /* user popout size (px) [default: var(--background-size)] */
+  --user-popout-attachment: fixed; /* user popout background attachment [default: var(--background-attachment)] */
+  --user-popout-filter: brightness(100%) contrast(100%) saturate(100%) grayscale(0%) invert(0%) blur(1px); /* user popout background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: url('https://media.tenor.com/JCXnn--HXegAAAAd/yae-yae-miko.gif'); /* user modal background image (link must be HTTPS) (not applied to nitro users) [default: var(--background-image)] */
+  --user-modal-position: center; /* user modal position [default: var(--background-position)] */
+  --user-modal-size: cover; /* user modal size (px) [default: var(--background-size)] */
+  --user-modal-attachment: fixed; /* user modal background attachment [default: var(--background-attachment)] */
+  --user-modal-filter: brightness(100%) contrast(100%) saturate(100%) grayscale(0%) invert(0%) blur(0px); /* user modal background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
+  /* HOME ICON */
+  --home-icon: url('https://media.tenor.com/cbZuTajbyr0AAAAd/kafka-honkai-star-rail.gif'); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
+  --home-size: 90px; /* home button icon size (px) [default:cover] */
+  /* FONTS */
+  --main-font: "Ubuntu", "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+  /* CHANNEL COLORS */
+  --channel-normal: rgb(255,255,255,0.65); /* channel text color [default: var(--interactive-normal)] */
+  --channel-muted: rgba(255,255,255,0.1); /* muted channel text color [default: var(--interactive-muted)] */
+  --channel-hover: var(--interactive-hover); /* hovered channel text color [default: var(--interactive-hover)] */
+  --channel-selected: var(--interactive-active); /* selected channel text color [default: var(--interactive-active)] */
+  --channel-selected-bg: var(--main-color); /* selected channel background [default: var(--main-color)] */
+  --channel-unread: #FF0000; /* unread channel text color [default: var(--main-color)] */
+  --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
+  /* ACCESSIBILITY */
+  --focus-color: var(--main-color); /* outline when pressing TAB key [default: var(--main-color)] */
+  
+  /* Additional variables from Braiden-Redemption that might need manual placement or are not directly supported */
+  --url-color: #FF0000;
+  --channels-width: 220px;
+  --members-width: 240px;
+  --HSL-server-icon-size: 45px;
+  --HSL-server-spacing: 10px;
+
+}
+
+/* THEME SPECIFIC SHADING */
+/* Using ASH THEME as a base and overriding with Braiden Redemption settings */
+:is(.theme-dark, .theme-light .theme-dark) {
+  --background-shading: rgba(0,0,0,0.6);
+  --card-shading: rgba(0, 0, 0, 0.2);
+  --popout-shading: rgba(0, 0, 0, 0.6);
+  --modal-shading: rgba(0, 0, 0, 0.4);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #d8d8db;
+  --muted-text: #aeaeb4;
+}
+
+/* ADD ADDITIONAL CSS BELOW HERE */
