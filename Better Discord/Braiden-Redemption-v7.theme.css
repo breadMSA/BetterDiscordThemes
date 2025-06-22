@@ -83,8 +83,8 @@
 }
 
 /* ADD ADDITIONAL CSS BELOW HERE */
-a {
-  color: var(--url-color);
+.numberBadge__2b1f5, .textBadge__2b1f5 {
+    background: #982929 !important; /* 在這裡換成您想要的顏色，例如預設的紅色 */
 }
 
 .winButtons_c38106 {
