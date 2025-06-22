@@ -19,6 +19,8 @@
   --hover-color: #B31E1E; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
   --success-color: #43b581; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
   --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+  --button-accent-color: #622599; /* 按鈕紫色 */
+  --button-hover-color: #7e30b5; /* 按鈕懸停紫色 */
   /* STATUS COLORS */
   --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
   --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
@@ -82,89 +84,34 @@
   --muted-text: #aeaeb4;
 }
 
-/* ADD ADDITIONAL CSS BELOW HERE */
-.numberBadge__2b1f5, .textBadge__2b1f5 {
-    background: #e62727 !important; /* 在這裡換成您想要的顏色，例如預設的紅色 */
-}
-
-/* 主頁朋友列表右側按鈕 (Message/More) */
-div[class^="buttons-"] button[class^="button-"] {
-    background-color: rgba(22, 22, 25, 0.6) !important; /* 按鈕背景色 */
-}
-div[class^="buttons-"] button[class^="button-"]:hover {
-    background-color: rgba(40, 40, 45, 0.8) !important; /* 滑鼠懸停時的背景色 */
-}
-
-/* 伺服器列表下方按鈕 (Add/Discover) */
-.circleIconButton__5bc7e {
-    background-color: rgba(30, 31, 34, 0.7) !important;
-}
-.circleIconButton__5bc7e:hover {
-    background-color: var(--hsl-hover-color) !important;
-}
-
-/* 主頁 "Active Now" 背景 */
-.nowPlayingColumn__133bf > div[class^="container-"] {
-    background-color: rgba(22, 22, 25, 0.5) !important;
-    border: 1px solid rgba(255, 255, 255, 0.05); /* 可選：加上淡淡的邊框 */
-}
-
-/* 語音連線時下方四個控制按鈕 */
-.panels_c48ade .button_e131a9 {
-    background-color: rgba(30, 31, 34, 0.7) !important;
-}
-.panels_c48ade .button_e131a9:hover {
-    background-color: rgba(45, 46, 51, 0.9) !important;
-}
-
-/* 語音連線時伺服器圖示上的喇叭圖案背景 */
-.list_c3cd7d .iconBadge__2b1f5 {
-    background-color: rgba(22, 22, 25, 0.8) !important;
-    box-shadow: 0 0 3px rgba(0,0,0,0.5); /* 可選：加上陰影讓它更突出 */
-}
-
-/* 頻道超連結的背景 (例如在 support ticket 訊息中) */
-.wrapper_f61d60 {
-    background-color: var(--main-color) !important;
-    padding: 2px 5px !important;
-    border-radius: 3px !important;
-}
-.wrapper_f61d60:hover {
-    background-color: var(--hover-color) !important;
-}
-
-/* 右上角的雙重視窗 */
-.winButtons_c38106 {
-  display: none;
-}
-
-
-
-
 /* =================================================================== */
-/* 介面可讀性綜合修正 V2 (2025-06-22)                   */
+/* 介面可讀性綜合修正 V3 (2025-06-22)                   */
 /* =================================================================== */
+
+/* --- 按鈕顏色修正 (全域) --- */
+/* 強制所有主要按鈕使用我們新的紫色變數，不再跟隨 main-color */
+.button__201d5.lookFilled__201d5.colorBrand__201d5,
+.button__201d5.lookFilled__201d5.colorPrimary__201d5 {
+    background-color: var(--button-accent-color) !important;
+}
+.button__201d5.lookFilled__201d5.colorBrand__201d5:hover,
+.button__201d5.lookFilled__201d5.colorPrimary__201d5:hover {
+    background-color: var(--button-hover-color) !important;
+}
+
+
+/* --- 介面細節修正 --- */
 
 /* 1. Codebox (程式碼區塊) 背景 */
 pre > code, code.inline {
-    background-color: rgba(10, 10, 12, 0.7) !important; /* 背景色 */
-    border: 1px solid rgba(255, 255, 255, 0.08) !important; /* 邊框色 */
+    background-color: rgba(10, 10, 12, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
-/* 2. DM 列表按鈕 (Friends/Nitro/Shop) & 搜尋框背景 */
-/* "Find or start a conversation" 搜尋框 */
+/* 2. "Find or start a conversation" 搜尋框背景 */
 div[class^="searchBar-"] {
     background-color: rgba(30, 31, 34, 0.7) !important;
     border-radius: 4px;
-}
-/* Friends, Nitro, Shop 等按鈕 */
-.privateChannels__35e86 .interactive__972a0 {
-    background-color: rgba(30, 31, 34, 0.5) !important;
-    margin-bottom: 4px !important;
-    border-radius: 4px !important;
-}
-.privateChannels__35e86 .interactive__972a0:hover {
-    background-color: rgba(45, 46, 51, 0.8) !important;
 }
 
 /* 3. 朋友列表上方的 Tab Bar 背景 */
@@ -175,56 +122,41 @@ div[class^="searchBar-"] {
     margin-bottom: 8px;
 }
 .top_b3f026 .item_b3f026.selected_b3f026 {
-    background-color: var(--main-color) !important; /* 選中項目的顏色 */
+    background-color: var(--button-accent-color) !important;
 }
 
 /* 4. 伺服器有新提及時 "NEW" 的背景 */
-/* (這個是文字徽章，例如 "NEW") */
 .textBadge__0034b {
     background-color: var(--danger-color) !important;
     color: white !important;
     border-radius: 8px !important;
 }
 
-/* =================================================================== */
-/* 5. 針對上次未生效項目的再次修正                  */
-/* =================================================================== */
-
-/* 5.1 語音連線時，伺服器圖示上的喇叭圖案背景 */
-/* 通用圖示徽章 (也包含其他小圖示) */
-.iconBadge__2b1f5 {
-    background-color: rgba(22, 22, 25, 0.9) !important;
-    box-shadow: 0 0 4px rgba(0,0,0,0.7) !important; /* 加上陰影使其更突出 */
-}
-
-/* 5.2 主頁 "Active Now" 背景 */
-.nowPlayingColumn__133bf {
-    background-color: rgba(18, 18, 20, 0.6) !important;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* 5.3 主頁朋友列表右側按鈕 (Message/More) */
+/* 5. 主頁朋友列表右側按鈕 (Message/More) 改成紫色 */
 div[class^="peopleListItem-"] div[class^="buttons-"] button {
-    background-color: rgba(35, 36, 41, 0.8) !important;
+    background-color: var(--button-accent-color) !important;
 }
 div[class^="peopleListItem-"] div[class^="buttons-"] button:hover {
-    background-color: rgba(55, 56, 61, 1) !important;
+    background-color: var(--button-hover-color) !important;
 }
 
-/* 5.4 頻道超連結的背景 (例如 'support ticket') */
-.wrapper_f61d60 {
-    background-color: var(--main-color) !important;
-    color: white !important; /* 確保文字是白色 */
-    padding: 2px 5px !important;
-    border-radius: 3px !important;
-}
-.wrapper_f61d60:hover {
-    background-color: var(--hover-color) !important;
-}
-
-/* 額外修正：解決伺服器列表下方按鈕 */
+/* 6. 其他上次修正的保留項目 */
 .guilds_c48ade .circleIconButton__5bc7e {
     background-color: rgba(30, 31, 34, 0.7) !important;
 }
+.panels_c48ade .button_e131a9 {
+    background-color: rgba(30, 31, 34, 0.7) !important;
+}
+.iconBadge__2b1f5 {
+    background-color: rgba(22, 22, 25, 0.9) !important;
+    box-shadow: 0 0 4px rgba(0,0,0,0.7) !important;
+}
+
+/* 右上角的雙重視窗 */
+.winButtons_c38106 {
+  display: none;
+}
+
+
+
+
