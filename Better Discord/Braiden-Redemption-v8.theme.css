@@ -87,36 +87,64 @@
 
 /* =================================================================== */
 /* ADDITIONAL CSS BELOW HERE                      */
-/* (介面可讀性綜合修正 V7 - 最終版)                */
+/* (介面可讀性綜合修正 V8 - 最終精修版)            */
 /* =================================================================== */
 
-/* --- USER SETTINGS 左側選擇列 (紅色高亮) --- */
-/* 提高權重，確保覆蓋 main.css 的設定 */
-.standardSidebarView__23e6b .navItem__551b0.selected__551b0:after {
-    background: var(--danger-color) !important;
-}
-
-/* --- 朋友列表 Tab Bar (Online/All/Pending) 樣式修正 --- */
-/* 提高權重，確保覆蓋 main.css 的設定 */
-.container_c8ffbb .top_b3f026 .item_b3f026.selected_b3f026 {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    color: var(--text-normal) !important;
-}
-.container_c8ffbb .top_b3f026 .item_b3f026 {
-    background-color: transparent !important;
-}
-
-/* --- "NEW MENTION" 徽章修正 (紅色) --- */
-/* 這個規則同時鎖定伺服器上的數字提及和文字提及徽章 */
-.mention__3b95d,
+/* --- 未讀/新徽章背景修正 (紅色) --- */
+/* ★★★ V8 修正：加回了被遺漏的 .numberBadge__2b1f5 規則 ★★★ */
+.numberBadge__2b1f5,
 .textBadge__0034b,
+.mention__3b95d,
 a[href="/store/nitro"] > div[class*="notice-"] {
     background-color: var(--danger-color) !important;
     color: #fff !important;
 }
 
-/* --- 按鈕與搜尋框透明化 --- */
-/* 主要按鈕 */
+/* --- 朋友列表 Tab Bar (Online/All/Pending) 樣式修正 --- */
+/* ★★★ V8 修正：使用更高權重的選擇器，確保永不變白 ★★★ */
+.peopleColumn__133bf .top_b3f026 {
+    background-color: transparent !important; /* 整個容器透明 */
+}
+/* 未選中的 Tab */
+.peopleColumn__133bf .top_b3f026 .item_b3f026 {
+    color: var(--text-muted) !important;
+    background-color: transparent !important;
+}
+/* 選中的 Tab */
+.peopleColumn__133bf .top_b3f026 .item_b3f026.selected_b3f026 {
+    color: var(--text-normal) !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 4px;
+}
+/* 滑鼠懸停的 Tab */
+.peopleColumn__133bf .top_b3f026 .item_b3f026:hover {
+    color: var(--text-normal) !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    border-radius: 4px;
+}
+
+
+/* --- 其他保持不變的修正 --- */
+
+/* User Settings 左側選擇列 (紅色高亮) */
+.standardSidebarView__23e6b .navItem__551b0.selected__551b0:after {
+    background: var(--danger-color) !important;
+}
+/* Direct Messages 左側選擇列 (紅色高亮) */
+.privateChannels__35e86 .interactive__972a0.interactiveSelected__972a0::before {
+    background: var(--danger-color) !important;
+}
+
+/* "Active Now" 背景 (完全透明) */
+.nowPlayingColumn__133bf {
+    background-color: transparent !important;
+    border: none !important;
+}
+.nowPlayingColumn__133bf .container__7d20c {
+    background-color: transparent !important;
+}
+
+/* 按鈕與搜尋框透明化 */
 .button__201d5.lookFilled__201d5.colorBrand__201d5,
 .button__201d5.lookFilled__201d5.colorPrimary__201d5 {
     background-color: rgba(0, 0, 0, 0.2) !important;
@@ -126,14 +154,13 @@ a[href="/store/nitro"] > div[class*="notice-"] {
 .button__201d5.lookFilled__201d5.colorPrimary__201d5:hover {
     background-color: rgba(0, 0, 0, 0.4) !important;
 }
-/* "Find or start a conversation" 搜尋框 */
 div[class^="searchBar-"] {
     background-color: rgba(0, 0, 0, 0.2) !important;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 4px;
 }
 
-/* --- 其他必要的介面細節修正 --- */
+/* 其他介面細節 */
 .winButtons_c38106 { display: none; }
 pre > code, code.inline {
     background-color: rgba(10, 10, 12, 0.7) !important;
