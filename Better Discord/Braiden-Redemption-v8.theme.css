@@ -98,6 +98,7 @@
 a[href="/store/nitro"] > div[class*="notice-"] {
     background-color: var(--danger-color) !important;
     color: #fff !important;
+    border: none !important;
 }
 
 /* --- 朋友列表 Tab Bar (Online/All/Pending) 樣式修正 --- */
