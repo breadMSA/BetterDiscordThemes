@@ -189,3 +189,14 @@ box-shadow: 0 0 4px rgba(0,0,0,0.7) !important;
     background: rgba(217, 32, 32, 0.5) !important; /* 與上面相同 */
     color: #fff !important; /* 與上面相同 */
 }
+
+/* 將提示列背景改為紅色 */
+.newMessagesBar__0f481 {
+    background-color: #d92020 !important; /* 您可以換成任何喜歡的紅色 */
+}
+
+/* 將 "Mark as Read" 文字改為紫色 */
+.newMessagesBar__0f481 a {
+    color: #c756f8 !important; /* 您可以換成任何喜歡的紫色 */
+    font-weight: 600 !important; /* 可選：讓文字加粗更顯眼 */
+}
