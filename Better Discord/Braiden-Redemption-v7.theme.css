@@ -36,7 +36,7 @@
   --user-popout-image: url('https://media.tenor.com/SlgI7OSVYGoAAAAd/honkai-star-rail-honkai.gif'); /* user popout background image (link must be HTTPS) (not applied to nitro users) [default: var(--background-image)] */
   --user-popout-position: center; /* user popout position [default: var(--background-position)] */
   --user-popout-size: var(--background-size); /* user popout size (px) [default: cover] */
-  --user-popout-attachment: fixed; /* user popout background attachment [default: var(--background-attachment)] */
+  --user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
   --user-popout-filter: brightness(100%) contrast(100%) saturate(100%) grayscale(0%) invert(0%) blur(1px); /* user popout background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
   /* USER MODAL BACKGROUND */
   --user-modal-image: url('https://media.tenor.com/JCXnn--HXegAAAAd/yae-yae-miko.gif'); /* user modal background image (link must be HTTPS) (not applied to nitro users) [default: var(--background-image)] */
@@ -55,7 +55,7 @@
   --channel-muted: rgba(255,255,255,0.1); /* muted channel text color [default: var(--interactive-muted)] */
   --channel-hover: var(--interactive-hover); /* hovered channel text color [default: var(--interactive-hover)] */
   --channel-selected: var(--interactive-active); /* selected channel text color [default: var(--interactive-active)] */
-  --channel-selected-bg: var(--main-color); /* selected channel background [default: var(--main-color)] */
+  --channel-selected-bg: #7a2bc4; /* selected channel background [default: var(--main-color)] */
   --channel-unread: #FF0000; /* unread channel text color [default: var(--main-color)] */
   --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
   /* ACCESSIBILITY */
@@ -73,8 +73,8 @@
 /* THEME SPECIFIC SHADING */
 /* Using ASH THEME as a base and overriding with Braiden Redemption settings */
 :is(.theme-dark, .theme-light .theme-dark) {
-  --background-shading: rgba(0,0,0,0.6);
-  --card-shading: rgba(0, 0, 0, 0.2);
+  --background-shading: rgba(252, 252, 252, 0.3); /*(0,0,0,0.6)*/
+  --card-shading: rgba(252, 252, 252, 0.3); /*(0, 0, 0, 0.2)*/
   --popout-shading: rgba(0, 0, 0, 0.6);
   --modal-shading: rgba(0, 0, 0, 0.4);
   --input-shading: rgba(255, 255, 255, 0.05);
