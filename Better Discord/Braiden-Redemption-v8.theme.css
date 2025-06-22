@@ -1,0 +1,151 @@
+/**
+ * @name ClearVision V7 for BetterDiscord (Customized by Braiden)
+ * @author ClearVision Team & Braiden
+ * @version 7.0.1 - Final V6
+ * @description Highly customizable theme for BetterDiscord.
+ * @source https://github.com/ClearVision/ClearVision-v7
+ * @website https://clearvision.github.io
+ */
+/* IMPORT CSS */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;300;400;500;700&display=swap');
+@import url('https://raw.githubusercontent.com/breadMSA/ClearVision-v6/master/main.css');
+@import url("https://raw.githubusercontent.com/breadMSA/ClearVision-v6/master/vencord.css");
+
+/* =================================================================== */
+/* 核心變數設定                             */
+/* =================================================================== */
+:root {
+  /* ACCENT COLORS */
+  --main-color: #ffffff; /* 主題白色，主要用於文字或需要高亮的地方 */
+  --hover-color: #B31E1E; /* 滑鼠懸停顏色 */
+  --success-color: #43b581; /* 成功顏色 */
+  --danger-color: #d92020; /* 危險/提醒顏色 (已調亮) */
+
+  /* STATUS COLORS */
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #9C27B0;
+  --streaming-color: #009688;
+  --offline-color: #808080;
+
+  /* APP BACKGROUND */
+  --background-shading-percent: 0%;
+  --background-image: url('https://upload-os-bbs.hoyolab.com/upload/2024/03/26/10059244/dfe2a028bd97a15a4d12888701166443_1454481873294327926.png');
+  --background-position: center;
+  --background-size: cover;
+  --background-attachment: fixed;
+  --background-filter: brightness(100%) contrast(100%) saturate(100%) grayscale(0%) invert(0%) blur(0px);
+
+  /* USER POPOUT & MODAL BACKGROUND */
+  --user-popout-image: var(--background-image);
+  --user-popout-position: var(--background-position);
+  --user-popout-size: var(--background-size);
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-filter: var(--background-filter);
+  --user-modal-image: url('https://media.tenor.com/JCXnn--HXegAAAAd/yae-yae-miko.gif');
+  --user-modal-position: center;
+  --user-modal-size: cover;
+  --user-modal-attachment: fixed;
+  --user-modal-filter: brightness(100%) contrast(100%) saturate(100%) grayscale(0%) invert(0%) blur(0px);
+  
+  /* HOME ICON */
+  --home-icon: url('https://media.tenor.com/cbZuTajbyr0AAAAd/kafka-honkai-star-rail.gif');
+  --home-size: 90px;
+
+  /* FONTS */
+  --main-font: "Ubuntu", "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
+
+  /* CHANNEL COLORS */
+  --channel-normal: rgb(255,255,255,0.65);
+  --channel-muted: rgba(255,255,255,0.1);
+  --channel-hover: var(--interactive-hover);
+  --channel-selected: var(--interactive-active);
+  --channel-selected-bg: #5e0f96; /* 伺服器頻道的選中顏色 */
+  --channel-unread: #FF0000;
+  --channel-unread-hover: var(--hover-color);
+
+  /* ACCESSIBILITY & Others */
+  --focus-color: var(--main-color);
+  --url-color: #1ee4eb;
+  --channels-width: 220px;
+  --members-width: 240px;
+}
+
+/* =================================================================== */
+/* 主題深淺色設定 (核心修正)                    */
+/* =================================================================== */
+:is(.theme-dark, .theme-light .theme-dark) {
+  --background-shading: rgba(0,0,0,0.6);
+  --card-shading: rgba(22, 22, 25, 0.6); 
+  --popout-shading: rgba(0, 0, 0, 0.7);
+  --modal-shading: rgba(0, 0, 0, 0.6);
+  --input-shading: rgba(255, 255, 255, 0.05);
+  --normal-text: #d8d8db;
+  --muted-text: #aeaeb4;
+}
+
+/* =================================================================== */
+/* ADDITIONAL CSS BELOW HERE                      */
+/* (介面可讀性綜合修正 V7 - 最終版)                */
+/* =================================================================== */
+
+/* --- USER SETTINGS 左側選擇列 (紅色高亮) --- */
+/* 提高權重，確保覆蓋 main.css 的設定 */
+.standardSidebarView__23e6b .navItem__551b0.selected__551b0:after {
+    background: var(--danger-color) !important;
+}
+
+/* --- 朋友列表 Tab Bar (Online/All/Pending) 樣式修正 --- */
+/* 提高權重，確保覆蓋 main.css 的設定 */
+.container_c8ffbb .top_b3f026 .item_b3f026.selected_b3f026 {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    color: var(--text-normal) !important;
+}
+.container_c8ffbb .top_b3f026 .item_b3f026 {
+    background-color: transparent !important;
+}
+
+/* --- "NEW MENTION" 徽章修正 (紅色) --- */
+/* 這個規則同時鎖定伺服器上的數字提及和文字提及徽章 */
+.mention__3b95d,
+.textBadge__0034b,
+a[href="/store/nitro"] > div[class*="notice-"] {
+    background-color: var(--danger-color) !important;
+    color: #fff !important;
+}
+
+/* --- 按鈕與搜尋框透明化 --- */
+/* 主要按鈕 */
+.button__201d5.lookFilled__201d5.colorBrand__201d5,
+.button__201d5.lookFilled__201d5.colorPrimary__201d5 {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.button__201d5.lookFilled__201d5.colorBrand__201d5:hover,
+.button__201d5.lookFilled__201d5.colorPrimary__201d5:hover {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+/* "Find or start a conversation" 搜尋框 */
+div[class^="searchBar-"] {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+/* --- 其他必要的介面細節修正 --- */
+.winButtons_c38106 { display: none; }
+pre > code, code.inline {
+    background-color: rgba(10, 10, 12, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.guilds_c48ade .circleIconButton__5bc7e {
+    background-color: rgba(30, 31, 34, 0.7) !important;
+}
+.panels_c48ade .button_e131a9 {
+    background-color: rgba(30, 31, 34, 0.7) !important;
+}
+.iconBadge__2b1f5 {
+    background-color: rgba(22, 22, 25, 0.9) !important;
+    box-shadow: 0 0 4px rgba(0,0,0,0.7) !important;
+}
