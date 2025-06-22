@@ -1,7 +1,7 @@
 /**
  * @name ClearVision V7 for BetterDiscord (Customized by Braiden)
  * @author ClearVision Team & Braiden
- * @version 7.0.1 - Final V6
+ * @version 7.0.1 - Ultimate Fix
  * @description Highly customizable theme for BetterDiscord.
  * @source https://github.com/ClearVision/ClearVision-v7
  * @website https://clearvision.github.io
@@ -12,14 +12,15 @@
 @import url("https://raw.githubusercontent.com/breadMSA/ClearVision-v6/master/vencord.css");
 
 /* =================================================================== */
-/* 核心變數設定                             */
+/* 核心變數設定 (已修正)                      */
 /* =================================================================== */
 :root {
   /* ACCENT COLORS */
-  --main-color: #ffffff; /* 主題白色，主要用於文字或需要高亮的地方 */
-  --hover-color: #B31E1E; /* 滑鼠懸停顏色 */
-  --success-color: #43b581; /* 成功顏色 */
-  --danger-color: #d92020; /* 危險/提醒顏色 (已調亮) */
+  /* --- 核心修正：將主要顏色從白色改為紅色，解決 User Settings 和 Friends Tab 的問題 --- */
+  --main-color: #d92020; 
+  --hover-color: #B31E1E; 
+  --success-color: #43b581;
+  --danger-color: #d92020; /* 也設為紅色以保持一致 */
 
   /* STATUS COLORS */
   --online-color: #43b581;
@@ -61,7 +62,7 @@
   --channel-muted: rgba(255,255,255,0.1);
   --channel-hover: var(--interactive-hover);
   --channel-selected: var(--interactive-active);
-  --channel-selected-bg: #5e0f96; /* 伺服器頻道的選中顏色 */
+  --channel-selected-bg: var(--main-color); /* 現在會是紅色 */
   --channel-unread: #FF0000;
   --channel-unread-hover: var(--hover-color);
 
@@ -81,16 +82,16 @@
   --popout-shading: rgba(0, 0, 0, 0.7);
   --modal-shading: rgba(0, 0, 0, 0.6);
   --input-shading: rgba(255, 255, 255, 0.05);
-  --normal-text: #d8d8db;
+  --normal-text: #ffffff; /* 文字調亮，以適應深色背景 */
   --muted-text: #aeaeb4;
 }
 
 /* =================================================================== */
 /* ADDITIONAL CSS BELOW HERE                      */
-/* (介面可讀性綜合修正 V6 - 最終版)                */
+/* (介面可讀性綜合修正 - 終極版)                  */
 /* =================================================================== */
 
-/* --- 全域按鈕、搜尋框透明化修正 --- */
+/* --- 按鈕、搜尋框透明化 --- */
 /* 主要按鈕 */
 .button__201d5.lookFilled__201d5.colorBrand__201d5,
 .button__201d5.lookFilled__201d5.colorPrimary__201d5 {
@@ -108,55 +109,15 @@ div[class^="searchBar-"] {
     border-radius: 4px;
 }
 
-/* --- 未讀/新徽章背景修正 (紅色) --- */
-.numberBadge__2b1f5,
-.textBadge__0034b,
-/* 鎖定 Nitro 旁邊的 "NEW" 標籤 */
-a[href="/store/nitro"] > div[class*="notice-"] {
+/* --- "NEW" 標籤修正 (紅色) --- */
+/* 這個選擇器專門鎖定 Nitro 旁邊的 "NEW" 標籤，確保它一定會被改到 */
+a[href="/store/nitro"] > div[class*="notice"] {
     background-color: var(--danger-color) !important;
     color: white !important;
     border-radius: 5px !important;
-}
-
-/* --- 選擇項目高亮修正 (紅色) --- */
-/* User Settings 左側選擇列 */
-.sidebarRegionScroller__23e6b .navItem__551b0.selected__551b0:after {
-    background: var(--danger-color) !important;
-}
-/* Direct Messages 左側選擇列 */
-.privateChannels__35e86 .interactive__972a0.interactiveSelected__972a0::before {
-    background: var(--danger-color) !important;
-}
-
-/* --- "Active Now" 背景修正 (完全透明) --- */
-.nowPlayingColumn__133bf {
-    background-color: transparent !important;
-    border: none !important;
-}
-.nowPlayingColumn__133bf .container__7d20c {
-    background-color: transparent !important;
-}
-
-/* --- 朋友列表 Tab Bar (Online/All/Pending) 樣式修正 --- */
-.top_b3f026 {
-    background-color: transparent !important; /* 整個容器透明 */
-}
-/* 未選中的 Tab */
-.top_b3f026 .item_b3f026 {
-    color: var(--text-muted) !important;
-    background-color: transparent !important;
-}
-/* 選中的 Tab */
-.top_b3f026 .item_b3f026.selected_b3f026 {
-    color: var(--text-normal) !important;
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    border-radius: 4px;
-}
-/* 滑鼠懸停的 Tab */
-.top_b3f026 .item_b3f026:hover {
-    color: var(--text-normal) !important;
-    background-color: rgba(0, 0, 0, 0.15) !important;
-    border-radius: 4px;
+    padding: 1px 4px !important;
+    font-size: 10px !important;
+    line-height: 12px !important;
 }
 
 /* --- 其他介面細節修正 --- */
