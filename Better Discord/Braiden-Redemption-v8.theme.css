@@ -87,121 +87,150 @@
 
 /* =================================================================== */
 /* ADDITIONAL CSS BELOW HERE                      */
-/* (介面可讀性綜合修正 V8 - 最終精修版)            */
+/* (V8 & V15 合併修正版)                           */
 /* =================================================================== */
 
 /* --- 未讀/新徽章背景修正 (紅色) --- */
-/* ★★★ V8 修正：加回了被遺漏的 .numberBadge__2b1f5 規則 ★★★ */
 .numberBadge__2b1f5,
 .textBadge__0034b,
 .mention__3b95d,
 a[href="/store/nitro"] > div[class*="notice-"] {
-background-color: var(--danger-color) !important;
-color: #fff !important;
+    background-color: var(--danger-color) !important;
+    color: #fff !important;
     border: none !important;
 }
 
 /* --- 朋友列表 Tab Bar (Online/All/Pending) 樣式修正 --- */
-/* ★★★ V8 修正：使用更高權重的選擇器，確保永不變白 ★★★ */
 .peopleColumn__133bf .top_b3f026 {
-background-color: transparent !important; /* 整個容器透明 */
+    background-color: transparent !important; /* 整個容器透明 */
 }
-/* 未選中的 Tab */
 .peopleColumn__133bf .top_b3f026 .item_b3f026 {
-color: var(--text-muted) !important;
-background-color: transparent !important;
+    color: var(--text-muted) !important;
+    background-color: transparent !important;
 }
-/* 選中的 Tab */
 .peopleColumn__133bf .top_b3f026 .item_b3f026.selected_b3f026 {
-color: var(--text-normal) !important;
-background-color: rgba(0, 0, 0, 0.2) !important;
-border-radius: 4px;
+    color: var(--text-normal) !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 4px;
 }
-/* 滑鼠懸停的 Tab */
 .peopleColumn__133bf .top_b3f026 .item_b3f026:hover {
-color: var(--text-normal) !important;
-background-color: rgba(0, 0, 0, 0.15) !important;
-border-radius: 4px;
+    color: var(--text-normal) !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    border-radius: 4px;
 }
 
-
-/* --- 其他保持不變的修正 --- */
-
-/* User Settings 左側選擇列 (紅色高亮) */
+/* --- User Settings & DM 左側選擇列 (紅色高亮) --- */
 .standardSidebarView__23e6b .navItem__551b0.selected__551b0:after {
-background: var(--danger-color) !important;
+    background: var(--danger-color) !important;
 }
-/* Direct Messages 左側選擇列 (紅色高亮) */
 .privateChannels__35e86 .interactive__972a0.interactiveSelected__972a0::before {
-background: var(--danger-color) !important;
+    background: var(--danger-color) !important;
 }
 
-/* "Active Now" 背景 (完全透明) */
+/* --- "Active Now" 背景 (完全透明) --- */
 .nowPlayingColumn__133bf {
-background-color: transparent !important;
-border: none !important;
+    background-color: transparent !important;
+    border: none !important;
 }
 .nowPlayingColumn__133bf .container__7d20c {
-background-color: transparent !important;
+    background-color: transparent !important;
 }
 
-/* 按鈕與搜尋框透明化 */
+/* --- 按鈕與搜尋框透明化 --- */
 .button__201d5.lookFilled__201d5.colorBrand__201d5,
 .button__201d5.lookFilled__201d5.colorPrimary__201d5 {
-background-color: rgba(0, 0, 0, 0.2) !important;
-border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .button__201d5.lookFilled__201d5.colorBrand__201d5:hover,
 .button__201d5.lookFilled__201d5.colorPrimary__201d5:hover {
-background-color: rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
 }
 div[class^="searchBar-"] {
-background-color: rgba(0, 0, 0, 0.2) !important;
-border: 1px solid rgba(255, 255, 255, 0.1);
-border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
 }
 
-/* 其他介面細節 */
+/* --- 其他介面細節 (保留) --- */
 .winButtons_c38106 { display: none; }
 pre > code, code.inline {
-background-color: rgba(10, 10, 12, 0.7) !important;
-border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background-color: rgba(10, 10, 12, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 .guilds_c48ade .circleIconButton__5bc7e {
-background-color: rgba(30, 31, 34, 0.7) !important;
+    background-color: rgba(30, 31, 34, 0.7) !important;
 }
 .panels_c48ade .button_e131a9 {
-background-color: rgba(30, 31, 34, 0.7) !important;
+    background-color: rgba(30, 31, 34, 0.7) !important;
 }
 .iconBadge__2b1f5 {
-background-color: rgba(22, 22, 25, 0.9) !important;
-box-shadow: 0 0 4px rgba(0,0,0,0.7) !important;
+    background-color: rgba(22, 22, 25, 0.9) !important;
+    box-shadow: 0 0 4px rgba(0,0,0,0.7) !important;
 }
 
-/* 針對大部分瀏覽器 (Chrome, Edge, Safari) */
+/* --- 反白文字顏色修正 (保留) --- */
 ::selection {
-    background: rgba(217, 32, 32, 0.5) !important; /* 反白的背景顏色，這裡用的是半透明的紅色 */
-    color: #fff !important; /* 反白後，文字本身的顏色，設為白色以確保清晰 */
+    background: rgba(217, 32, 32, 0.5) !important;
+    color: #fff !important;
 }
-
-/* 針對 Firefox 瀏覽器 */
 ::-moz-selection {
-    background: rgba(217, 32, 32, 0.5) !important; /* 與上面相同 */
-    color: #fff !important; /* 與上面相同 */
+    background: rgba(217, 32, 32, 0.5) !important;
+    color: #fff !important;
 }
 
-/* 將提示列背景改為紅色 */
+/* --- 聊天室內提示列 (保留) --- */
 .newMessagesBar__0f481 {
-    background-color: #d92020 !important; /* 您可以換成任何喜歡的紅色 */
+    background-color: #d92020 !important;
 }
-
-/* 將 "Mark as Read" 文字改為紫色 */
 .newMessagesBar__0f481 a {
-    color: #c756f8 !important; /* 您可以換成任何喜歡的紫色 */
-    font-weight: 600 !important; /* 可選：讓文字加粗更顯眼 */
+    color: #c756f8 !important;
+    font-weight: 600 !important;
 }
 
-/* --- 將頻道列表中「未讀訊息」的頻道文字改為紅色 --- */
+/* --- 頻道列表未讀文字 (保留) --- */
 .modeUnreadImportant__2ea32 .name__2ea32 {
+    color: var(--danger-color) !important;
+}
+
+
+/* =================================================================== */
+/* V15 新增修正                           */
+/* =================================================================== */
+
+/* --- 伺服器頻道列表中的「New Unreads」提示列 (紅色背景) --- */
+.bar__3b95d.unreadBar__629e4 {
+    background-color: var(--danger-color) !important;
+}
+.bar__3b95d.unreadBar__629e4 .text__3b95d {
+    color: #fff !important;
+}
+
+/* --- 斜線指令選單背景 (半透明深色) --- */
+.wrapper__14245.categoryHeader_d1405b {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+.autocomplete__13533 .selected__1a58a {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* --- Hashtag 相關元素 (紅色) --- */
+.searchAnswer_bd8186 {
+    background-color: var(--danger-color) !important;
+    color: #fff !important;
+    padding: 0 6px;
+    border-radius: 4px;
+}
+.channelMention.wrapper_f61d60 {
+    background-color: hsla(from var(--danger-color) h s l / 0.15) !important;
+    color: var(--danger-color) !important;
+    font-weight: 500;
+    padding: 1px 4px;
+    border-radius: 4px;
+}
+.channelMention.wrapper_f61d60:hover {
+    background-color: hsla(from var(--danger-color) h s l / 0.3) !important;
+}
+.channelMention.wrapper_f61d60 .icon_c76ab6 {
     color: var(--danger-color) !important;
 }
