@@ -201,11 +201,6 @@ box-shadow: 0 0 4px rgba(0,0,0,0.7) !important;
     font-weight: 600 !important; /* 可選：讓文字加粗更顯眼 */
 }
 
-/* --- 修正「斜線指令」選擇項目的背景 --- */
-.selected__1a58a, .selected__1a58a:hover {
-    background-color: rgba(0, 0, 0, 0.4) !important;
-}
-
 /* --- 將頻道列表中「未讀訊息」的頻道文字改為紅色 --- */
 .modeUnreadImportant__2ea32 .name__2ea32 {
     color: var(--danger-color) !important;
