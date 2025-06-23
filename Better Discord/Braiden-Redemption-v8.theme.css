@@ -238,3 +238,19 @@ pre > code, code.inline {
     background-color: rgba(0, 0, 0, 0.3) !important;
     border-color: rgba(255, 255, 255, 0.1) !important;
 }
+
+/* --- 將 "Live" 狀態徽章的背景改為 danger-color --- */
+.live_a7acae.textBadge__2b1f5 {
+    background-color: var(--danger-color) !important;
+}
+
+/* --- 將「New Messages」分隔線改為紅色 --- */
+/* 針對分隔線本身 */
+.divider__5126c.isUnread__908e2 {
+    border-color: var(--danger-color) !important;
+}
+
+/* 針對 "new" 藥丸圖示和文字 */
+.isUnread__908e2 .unreadPill__908e2 {
+    color: var(--danger-color) !important;
+}
