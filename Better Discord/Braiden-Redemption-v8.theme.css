@@ -219,7 +219,7 @@ pre > code, code.inline {
 }
 .channelMention.wrapper_f61d60 {
     background-color: hsla(from var(--danger-color) h s l / 0.3) !important; /* V16 修改：顏色更深 */
-    color: var(--danger-color) !important;
+    color: #a61616 !important;
     font-weight: 500;
     padding: 1px 4px;
     border-radius: 4px;
