@@ -19,7 +19,7 @@
 --main-color: #ffffff; /* 主題白色，主要用於文字或需要高亮的地方 */
 --hover-color: #B31E1E; /* 滑鼠懸停顏色 */
 --success-color: #43b581; /* 成功顏色 */
---danger-color: #d92020; /* 危險/提醒顏色 (已調亮) */
+--danger-color: #a61616; /* 危險/提醒顏色 #d92020 */
 
 /* STATUS COLORS */
 --online-color: #43b581;
@@ -217,18 +217,20 @@ pre > code, code.inline {
     padding: 0 6px;
     border-radius: 4px;
 }
+
+/* 聊天室中的 Hashtag 頻道連結 (背景改為實心紅、文字改為白) */
 .channelMention.wrapper_f61d60 {
-    background-color: hsla(from var(--danger-color) h s l / 0.3) !important; /* V16 修改：顏色更深 */
-    color: #a61616 !important;
+    background-color: var(--danger-color) !important; /* 直接使用您的紅色變數 */
+    color: #fff !important; /* #fff 代表白色 */
     font-weight: 500;
     padding: 1px 4px;
     border-radius: 4px;
 }
 .channelMention.wrapper_f61d60:hover {
-    background-color: hsla(from var(--danger-color) h s l / 0.5) !important; /* V16 修改：顏色更深 */
+    background-color: var(--hover-color) !important; /* 滑鼠懸停時使用您定義的 hover-color */
 }
 .channelMention.wrapper_f61d60 .icon_c76ab6 {
-    color: var(--danger-color) !important;
+    color: #fff !important; /* 讓小箭頭也變成白色，才能看清楚 */
 }
 
 /* --- 特定文字輸入區塊改為半透明背景 (V17 新增) --- */
