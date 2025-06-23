@@ -87,7 +87,7 @@
 
 /* =================================================================== */
 /* ADDITIONAL CSS BELOW HERE                      */
-/* (V8 & V15 合併修正版)                           */
+/* (V15 & V16 & V17 最終合併版)                     */
 /* =================================================================== */
 
 /* --- 未讀/新徽章背景修正 (紅色) --- */
@@ -193,12 +193,7 @@ pre > code, code.inline {
     color: var(--danger-color) !important;
 }
 
-
-/* =================================================================== */
-/* V15 新增修正                           */
-/* =================================================================== */
-
-/* --- 伺服器頻道列表中的「New Unreads」提示列 (紅色背景) --- */
+/* --- 伺服器頻道列表中的「New Unreads」提示列 (V15 新增) --- */
 .bar__3b95d.unreadBar__629e4 {
     background-color: var(--danger-color) !important;
 }
@@ -206,7 +201,7 @@ pre > code, code.inline {
     color: #fff !important;
 }
 
-/* --- 斜線指令選單背景 (半透明深色) --- */
+/* --- 斜線指令選單背景 (V15 新增) --- */
 .wrapper__14245.categoryHeader_d1405b {
     background-color: rgba(0, 0, 0, 0.2) !important;
 }
@@ -214,7 +209,8 @@ pre > code, code.inline {
     background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-/* --- Hashtag 相關元素 (紅色) --- */
+/* --- Hashtag & Search Filter 相關元素 (V16 修改) --- */
+.searchFilter_bd8186, /* V16 新增 */
 .searchAnswer_bd8186 {
     background-color: var(--danger-color) !important;
     color: #fff !important;
@@ -222,15 +218,21 @@ pre > code, code.inline {
     border-radius: 4px;
 }
 .channelMention.wrapper_f61d60 {
-    background-color: hsla(from var(--danger-color) h s l / 0.15) !important;
+    background-color: hsla(from var(--danger-color) h s l / 0.3) !important; /* V16 修改：顏色更深 */
     color: var(--danger-color) !important;
     font-weight: 500;
     padding: 1px 4px;
     border-radius: 4px;
 }
 .channelMention.wrapper_f61d60:hover {
-    background-color: hsla(from var(--danger-color) h s l / 0.3) !important;
+    background-color: hsla(from var(--danger-color) h s l / 0.5) !important; /* V16 修改：顏色更深 */
 }
 .channelMention.wrapper_f61d60 .icon_c76ab6 {
     color: var(--danger-color) !important;
+}
+
+/* --- 特定文字輸入區塊改為半透明背景 (V17 新增) --- */
+.vc-settings-theme-links {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
 }
