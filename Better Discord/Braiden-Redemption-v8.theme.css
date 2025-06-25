@@ -343,3 +343,12 @@ button.colorWhite__201d5:has(.vc-donate-button):hover {
 .bar__7aaec.voiceBar__7aaec .barText__7aaec {
     color: #fff !important;
 }
+
+/* --- 將 "New Mentions" 提示列背景改為紅色 --- */
+.bar__7aaec {
+    background-color: var(--danger-color) !important;
+}
+
+.bar__7aaec .barText__7aaec {
+    color: #fff !important;
+}
