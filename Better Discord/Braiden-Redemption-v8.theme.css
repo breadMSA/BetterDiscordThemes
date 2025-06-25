@@ -254,3 +254,62 @@ pre > code, code.inline {
 .isUnread__908e2 .unreadPill__908e2 {
     color: var(--danger-color) !important;
 }
+
+/* =================================================================== */
+/* V18 修正 (2025-06-23)                       */
+/* =================================================================== */
+
+/* --- 1. 將 "Try out Nitro" 的背景改為半透明 --- */
+.premiumBackground__65c15 {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* --- 2. 將 "Go to Shop" 按鈕背景改為預設的半透明深色 --- */
+.ctaButton__8279f {
+    background-color: rgba(0, 0, 0, 0.2) !importan;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.ctaButton__8279f:hover {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* --- 3. 將特定核取方塊(checkbox)改為預設樣式 --- */
+/* 這個選擇器專門針對您提供的核取方塊 */
+.container__87bf1.checked__87bf1 {
+    background: #4f545c !important; /* 使用一個中性的深灰色 */
+}
+
+/* --- 4. 將特定 session 圖示改為預設樣式 --- */
+.sessionIcon__803f2 {
+    background-color: #4f545c !important; /* 使用一個中性的深灰色 */
+}
+
+/* --- 5. 將 Shiny Button (例如 "Subscribe") 改為預設樣式 --- */
+.shinyButton__6a443 {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    text-shadow: none !important;
+}
+.shinyButton__6a443:hover {
+    background: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* --- 6. 將 Radio Bar (單選項目) 的選中背景改為紅色 --- */
+.item__001a7[aria-checked=true] .radioBar__001a7 {
+    background-color: var(--danger-color) !important;
+}
+
+/* --- 7. 將 "Donate" 按鈕背景改為紅色 --- */
+/* 這個規則專門針對包含 "vc-donate-button" 的白色按鈕 */
+button.colorWhite__201d5:has(.vc-donate-button) {
+    background-color: var(--danger-color) !important;
+    color: white !important;
+}
+button.colorWhite__201d5:has(.vc-donate-button):hover {
+    background-color: var(--hover-color) !important;
+}
+
+/* --- 將 "Beta" 徽章背景改為紅色 --- */
+.beta__5ce63.textBadge__2b1f5 {
+    background-color: var(--danger-color) !important;
+}
