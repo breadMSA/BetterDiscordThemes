@@ -266,7 +266,7 @@ pre > code, code.inline {
 
 /* --- 2. 將 "Go to Shop" 按鈕背景改為預設的半透明深色 --- */
 .ctaButton__8279f {
-    background-color: rgba(0, 0, 0, 0.2) !importan;
+    background-color: rgba(0, 0, 0, 0.2) !important;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .ctaButton__8279f:hover {
@@ -276,7 +276,7 @@ pre > code, code.inline {
 /* --- 3. 將特定核取方塊(checkbox)改為預設樣式 --- */
 /* 這個選擇器專門針對您提供的核取方塊 */
 .container__87bf1.checked__87bf1 {
-    background: #4f545c !important; /* 使用一個中性的深灰色 */
+    background: var(--danger-color) !important; /* 使用一個中性的深灰色 */
 }
 
 /* --- 4. 將特定 session 圖示改為預設樣式 --- */
