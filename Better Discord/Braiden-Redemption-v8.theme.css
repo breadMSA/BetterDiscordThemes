@@ -352,3 +352,29 @@ button.colorWhite__201d5:has(.vc-donate-button):hover {
 .bar__7aaec .barText__7aaec {
     color: #fff !important;
 }
+
+/* =================================================================== */
+/* V21 新增修正                               */
+/* =================================================================== */
+
+/* --- 將 @User 提及改成跟 #channel / @Role 提及一樣 --- */
+span.mention.wrapper_f61d60 {
+    background-color: hsla(from var(--danger-color) h s l / 0.3) !important;
+    color: var(--danger-color) !important;
+    font-weight: 500;
+    padding: 1px 4px;
+    border-radius: 4px;
+}
+span.mention.wrapper_f61d60:hover {
+    background-color: hsla(from var(--danger-color) h s l / 0.5) !important;
+}
+
+/* --- 將下拉選單中的「選擇項目」背景改為紅色 --- */
+.option__3f413[aria-selected=true] {
+    background-color: var(--danger-color) !important;
+    color: #fff !important; /* 同時將文字改為白色以利閱讀 */
+}
+/* 同時修正選擇項目中的打勾圖示顏色 */
+.option__3f413[aria-selected=true] .selectedIcon__3f413 {
+    color: #fff !important;
+}
