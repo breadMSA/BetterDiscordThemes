@@ -313,3 +313,33 @@ button.colorWhite__201d5:has(.vc-donate-button):hover {
 .beta__5ce63.textBadge__2b1f5 {
     background-color: var(--danger-color) !important;
 }
+
+/* =================================================================== */
+/* V19 新增修正                               */
+/* =================================================================== */
+
+/* --- 1. "AKA" 徽章背景改為紅色 --- */
+.akaBadge__488b1 {
+    background-color: var(--danger-color) !important;
+    color: #fff !important;
+}
+
+/* --- 2. 將 @Role 提及改成跟 #channel 提及一樣 --- */
+.roleMention__75297.wrapper_f61d60 {
+    background-color: hsla(from var(--danger-color) h s l / 0.3) !important;
+    color: var(--danger-color) !important;
+    font-weight: 500;
+    padding: 1px 4px;
+    border-radius: 4px;
+}
+.roleMention__75297.wrapper_f61d60:hover {
+    background-color: hsla(from var(--danger-color) h s l / 0.5) !important;
+}
+
+/* --- 3. "in Voice" 提示列背景改為紅色 --- */
+.bar__7aaec.voiceBar__7aaec {
+    background-color: var(--danger-color) !important;
+}
+.bar__7aaec.voiceBar__7aaec .barText__7aaec {
+    color: #fff !important;
+}
