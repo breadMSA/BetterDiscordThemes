@@ -452,3 +452,8 @@ span.mention.wrapper_f61d60:hover {
 .stickerCategoryGenericSelected__3ad28 {
     background-color: var(--danger-color) !important;
 }
+
+/* --- 將載入中的點點 (...) 改為紫色 --- */
+.spinner__0b5bb .item__0b5bb {
+    background-color: #8A2BE2 !important; /* 您可以換成任何喜歡的紫色 */
+}
