@@ -400,3 +400,29 @@ span.mention.wrapper_f61d60:hover {
 .channelHeader__35a7e .channelName__35a7e svg path {
     fill: #fff !important;
 }
+
+/* =================================================================== */
+/* V24 新增修正 (表情符號選擇器)             */
+/* =================================================================== */
+
+/* --- 1. 將被選中的表情符號分頁 (如 "Emoji") 背景改為紅色 --- */
+.navButton__08434.navButtonActive__08434 {
+    background-color: var(--danger-color) !important;
+}
+
+/* --- 2. 將表情符號類別標頭 (如 "Favorites") 背景改為紅色 --- */
+.wrapper__14245.header_c656ac {
+    background-color: var(--danger-color) !important;
+}
+/* 同時將標頭內的文字和圖示改為白色，確保清晰可見 */
+.wrapper__14245.header_c656ac .headerLabel__14245,
+.wrapper__14245.header_c656ac .headerIcon__14245 path,
+.wrapper__14245.header_c656ac .headerCollapseIcon__14245 path {
+    color: #fff !important;
+    fill: #fff !important;
+}
+
+/* --- 3. 將被選中的表情符號類別圖示 (下方或側方) 背景改為紅色 --- */
+.categoryItemDefaultCategorySelected_b9ee0c {
+    background-color: var(--danger-color) !important;
+}
