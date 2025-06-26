@@ -426,3 +426,29 @@ span.mention.wrapper_f61d60:hover {
 .categoryItemDefaultCategorySelected_b9ee0c {
     background-color: var(--danger-color) !important;
 }
+
+/* =================================================================== */
+/* V25 新增修正 (表情/貼圖選擇器)          */
+/* =================================================================== */
+
+/* --- 1. 將表情符號選擇器中的漸層背景改為紅色 --- */
+.categoryFadeBlurple_d02962 {
+    background: var(--danger-color) !important;
+}
+
+/* --- 2. 將貼圖包標頭 (Pack Header) 背景改為紅色 --- */
+.wrapper__14245.packHeader_e94b8c {
+    background-color: var(--danger-color) !important;
+}
+/* 同時將標頭內的文字和圖示改為白色 */
+.wrapper__14245.packHeader_e94b8c .headerLabel__14245,
+.wrapper__14245.packHeader_e94b8c .headerIcon__14245 path,
+.wrapper__14245.packHeader_e94b8c .headerCollapseIcon__14245 path {
+    color: #fff !important;
+    fill: #fff !important;
+}
+
+/* --- 3. 將被選中的貼圖類別圖示背景改為紅色 --- */
+.stickerCategoryGenericSelected__3ad28 {
+    background-color: var(--danger-color) !important;
+}
