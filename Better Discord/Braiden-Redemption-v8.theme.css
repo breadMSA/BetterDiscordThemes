@@ -378,3 +378,25 @@ span.mention.wrapper_f61d60:hover {
 .option__3f413[aria-selected=true] .selectedIcon__3f413 {
     color: #fff !important;
 }
+
+/* =================================================================== */
+/* V23 新增修正                               */
+/* =================================================================== */
+
+/* --- 將 "new" 文字徽章背景改為紅色 --- */
+.newBadge__4ed1a {
+    background-color: var(--danger-color) !important;
+}
+
+/* --- 將「最近提及」中的頻道標頭背景改為紅色 --- */
+.channelHeader__35a7e {
+    background-color: var(--danger-color) !important;
+}
+/* 同時將標頭內的文字和圖示改為白色，確保清晰可見 */
+.channelHeader__35a7e .channelNameSpan__35a7e,
+.channelHeader__35a7e .subtext__35a7e {
+    color: #fff !important;
+}
+.channelHeader__35a7e .channelName__35a7e svg path {
+    fill: #fff !important;
+}
