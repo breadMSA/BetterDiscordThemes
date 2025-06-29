@@ -457,3 +457,20 @@ span.mention.wrapper_f61d60:hover {
 .spinner__0b5bb .item__0b5bb {
     background-color: #8A2BE2 !important; /* 您可以換成任何喜歡的紫色 */
 }
+
+
+/* =================================================================== */
+/* V26 新增修正 (Quest/禮物箱)                 */
+/* =================================================================== */
+
+/* --- 將「任務/促銷」方塊背景改為紅色 --- */
+.wrapper__960df {
+    background-color: var(--danger-color) !important;
+}
+
+/* 同時將方塊內的文字改為白色，確保清晰可見 */
+.wrapper__960df .headingCopy__960df h2,
+.wrapper__960df .instructions__960df div,
+.wrapper__960df .headingCopy__960df div {
+    color: #fff !important;
+}
