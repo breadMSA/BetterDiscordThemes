@@ -8,7 +8,8 @@
  * @invite dHaSxn3
 */
 /* IMPORT CSS */
-@import url('https://clearvision.github.io/ClearVision-v6/main.css');
+@import url('https://raw.githubusercontent.com/breadMSA/ClearVision-v6/refs/heads/master/kokomi.css');
+@import url("https://raw.githubusercontent.com/breadMSA/ClearVision-v6/refs/heads/master/vencord.css");
 
 /* =================================================================== */
 /* 核心變數設定                                 */
