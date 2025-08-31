@@ -1,0 +1,94 @@
+/**
+ * @name kokomi-V6 (Re-formatted)
+ * @author ClearVision Team & User
+ * @version 6.9.0 - Re-formatted
+ * @description Highly customizable and beautiful theme for BetterDiscord.
+ * @source https://github.com/ClearVision/ClearVision-v6
+ * @website https://clearvision.github.io
+ * @invite dHaSxn3
+*/
+/* IMPORT CSS */
+@import url('https://clearvision.github.io/ClearVision-v6/main.css');
+
+/* =================================================================== */
+/* 核心變數設定                                 */
+/* =================================================================== */
+:root {
+/* ACCENT COLORS */
+--main-color: #80B8F9;
+--hover-color: #1E63B3;
+--success-color: #43B581;
+--danger-color: #982929;
+--url-color: var(--main-color);
+
+/* STATUS COLORS */
+--online-color: #43B581;
+--idle-color: #faa61a;
+--dnd-color: #982929;
+--streaming-color: #593695;
+--offline-color: #808080;
+
+/* APP BACKGROUND */
+--background-shading: 100%;
+--background-shading-percent: 100%; /* 為了與你的新格式相容 */
+--background-image: url('https://i.meee.com.tw/h5aWR4P.png');
+--background-position: center;
+--background-size: cover;
+--background-attachment: fixed;
+--background-repeat: no-repeat;
+--background-filter: brightness(100%) contrast(100%) saturate(100%) grayscale(0%) invert(0%) blur(0px);
+
+/* USER POPOUT & MODAL BACKGROUND */
+--user-popout-image: url('https://c4.wallpaperflare.com/wallpaper/358/936/897/genshin-impact-artwork-sangonomiya-kokomi-genshin-impact-pink-hair-blue-hair-hd-wallpaper-preview.jpg');
+--user-popout-position: center;
+--user-popout-size: cover;
+--user-popout-repeat: no-repeat;
+--user-popout-attachment: fixed;
+--user-popout-filter: brightness(100%) contrast(100%) saturate(100%) grayscale(0%) invert(0%) blur(3px);
+
+--user-modal-image: url('https://wallpapercave.com/wp/wp12027124.jpg');
+--user-modal-position: center;
+--user-modal-size: cover;
+--user-modal-repeat: no-repeat;
+--user-modal-attachment: fixed;
+--user-modal-filter: brightness(100%) contrast(100%) saturate(100%) grayscale(0%) invert(0%) blur(3px);
+
+/* HOME ICON */
+--home-icon: url('https://media.tenor.com/6ukmmG3vmPkAAAAd/genshin-impact-kokomi.gif');
+--home-size: 40px;
+--home-position: center;
+
+/* FONTS */
+--main-font: gg sans;
+--code-font: Consolas;
+
+/* CHANNEL COLORS */
+--channel-unread: #3B3737;
+--channel-color: rgb(0,0,0,0.7);
+--muted-color: rgb(0,0,0,0.28);
+/* 由於原主題未定義這些，我們保持原樣 */
+--channel-normal: var(--channel-color); 
+--channel-muted: var(--muted-color);
+--channel-hover: initial;
+--channel-selected: initial;
+--channel-selected-bg: initial;
+
+/* ACCESSIBILITY & Others */
+--channels-width: 220px;
+--members-width: 240px;
+--backdrop-overlay: rgba(0,0,0,0.8);
+--backdrop-image: var(--background-image);
+--backdrop-position: var(--background-position);
+--backdrop-size: var(--background-size);
+--backdrop-repeat: var(--background-repeat);
+--backdrop-attachment: var(--background-attachment);
+--backdrop-filter: var(--background-filter);
+--bd-blue: var(--main-color);
+--bd-blue-hover: var(--hover-color);
+--bd-blue-active: var(--hover-color);
+}
+
+/* =================================================================== */
+/* 額外的客製化與修正 (保留原始檔案)                 */
+/* =================================================================== */
+/* 以下為原始 ClearVision-v6.9.0 檔案中的額外 CSS，如果需要，請手動複製過來 */
