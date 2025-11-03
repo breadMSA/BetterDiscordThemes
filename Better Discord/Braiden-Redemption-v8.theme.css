@@ -477,15 +477,27 @@ span.mention.wrapper_f61d60:hover {
 
 
 /* =================================================================== */
-/* Discord 更新修復 (2025-11-03)         */
+/* Discord 更新修復 (2025-11-03 v2)         */
 /* =================================================================== */
 
 /* 1. 修復私訊列表 (DM List) 的背景問題 */
+/* 你主題的 main.css 檔案 對 .privateChannels__35e86 
+  設定了半透明背景，我們在這裡強制將它改回完全透明。
+*/
+.privateChannels__35e86 {
+    background: transparent !important;
+}
+
+/* 同時，確保內部的滾動區域也是透明的。
+*/
 .scrollerBase_d125d2 {
-    background-color: transparent !important;
+    background: transparent !important;
 }
 
 /* 2. 修復伺服器列表 (Server List) 的背景問題 */
+/* 你主題的 main.css 是針對舊的 .guilds_c48ade class，
+  Discord 把它換成了 .stack_dbd263，我們強制讓這個新 class 透明。
+*/
 .stack_dbd263 {
-    background-color: transparent !important;
+    background: transparent !important;
 }
