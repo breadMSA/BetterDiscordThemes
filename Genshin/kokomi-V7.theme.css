@@ -132,3 +132,30 @@
 .privateChannels_e6b769 .interactive__972a0.interactiveSelected__972a0::before {
     background: var(--danger-color) !important;
 }
+
+/* =================================================================== */
+/* 🔎 搜尋篩選器彈出窗口 背景修復 (針對透明背景問題) 💡 */
+/* =================================================================== */
+
+/* 針對所有以 "popout-" 或 "searchPopout-" 開頭的新容器 class (模糊匹配) */
+/* 使用主題內建的 --popout-shading 作為半透明背景 */
+div[class^="popout-"], 
+div[class^="searchPopout-"]
+{
+    background-color: var(--hsl-popout-shading) !important; /* 強制使用您主題的半透明深色背景 */
+    border: none !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) !important; /* 增加陰影以提供視覺區隔 */
+    border-radius: 8px !important;
+}
+
+/* 確保 Popout 內部的日期選擇器等複雜元件也使用正確的 Popout 背景 */
+.react-datepicker__portal div[class*="popout-"] {
+    background-color: var(--hsl-popout-shading) !important;
+}
+
+/* 確保文字不會因為透明背景而難以閱讀 */
+div[class^="popout-"] *,
+div[class^="searchPopout-"] * {
+    /* 使用主題內建的文字顏色變量，確保文字清晰 (在您的設定中是 #d8d8db) */
+    color: var(--text-default) !important; 
+}
