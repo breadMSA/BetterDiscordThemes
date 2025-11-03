@@ -505,3 +505,17 @@ span.mention.wrapper_f61d60:hover {
 .scroller_ef3116 {
     background: transparent !important;
 }
+
+
+/* =================================================================== */
+/* V-Fix: 修復私訊列表選中項目 (Friends)         */
+/* =================================================================== */
+
+/* 檔案中的 .privateChannels__35e86 規則已失效。
+  使用新的父層 .privateChannels_e6b769，
+  並鎖定 HTML 中的 .interactiveSelected__972a0 類別，
+  將 main.css 產生的 ::before 虛擬元素背景從白色改為紅色。
+*/
+.privateChannels_e6b769 .interactive__972a0.interactiveSelected__972a0::before {
+    background: var(--danger-color) !important;
+}
