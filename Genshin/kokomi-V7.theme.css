@@ -90,15 +90,31 @@
 }
 
 /* =================================================================== */
-/* Discord 更新修復 (2025-11-03)         */
+/* Discord 更新修復 (2025-11-03 v3 - 最終版)    */
 /* =================================================================== */
 
-/* 1. 修復私訊列表 (DM List) 的背景問題 */
-.scrollerBase_d125d2 {
-    background-color: transparent !important;
+/* 1. 移除整個側邊欄的最外層背景 (新 class) */
+.sidebar__5e434 {
+    background: transparent !important;
 }
 
-/* 2. 修復伺服器列表 (Server List) 的背景問題 */
-.stack_dbd263 {
-    background-color: transparent !important;
+/* 2. 移除伺服器列表的背景 (新 class，舊的是 guilds_c48ade) */
+.guilds__5e434 {
+    background: transparent !important;
+}
+
+/* 3. 移除私訊列表區域的背景 (新 class，舊的是 privateChannels__35e86) */
+.sidebarList__5e434,
+.privateChannels_e6b769 {
+    background: transparent !important;
+}
+
+/* 4. 移除你主題 main.css 檔案 增加的滾動區域半透明背景 */
+.scrollerBase_d125d2 {
+    background: transparent !important;
+}
+
+/* 5. 確保伺服器列表的滾動區域也是透明的 (新 class) */
+.scroller_ef3116 {
+    background: transparent !important;
 }
