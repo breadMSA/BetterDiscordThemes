@@ -474,3 +474,18 @@ span.mention.wrapper_f61d60:hover {
 .wrapper__960df .headingCopy__960df div {
     color: #fff !important;
 }
+
+
+/* =================================================================== */
+/* Discord 更新修復 (2025-11-03)         */
+/* =================================================================== */
+
+/* 1. 修復私訊列表 (DM List) 的背景問題 */
+.scrollerBase_d125d2 {
+    background-color: transparent !important;
+}
+
+/* 2. 修復伺服器列表 (Server List) 的背景問題 */
+.stack_dbd263 {
+    background-color: transparent !important;
+}
