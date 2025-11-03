@@ -12,7 +12,7 @@
 @import url("https://raw.githubusercontent.com/breadMSA/ClearVision-v6/master/vencord.css");
 
 /* =================================================================== */
-/* 核心變數設定                             */
+/* 核心變數設定                             */
 /* =================================================================== */
 :root {
 /* ACCENT COLORS */
@@ -73,11 +73,11 @@
 }
 
 /* =================================================================== */
-/* 主題深淺色設定 (核心修正)                    */
+/* 主題深淺色設定 (核心修正)                    */
 /* =================================================================== */
 :is(.theme-dark, .theme-light .theme-dark) {
 --background-shading: rgba(0,0,0,0.6);
---card-shading: rgba(22, 22, 25, 0.6); 
+--card-shading: rgba(22, 22, 25, 0.6); 
 --popout-shading: rgba(0, 0, 0, 0.7);
 --modal-shading: rgba(0, 0, 0, 0.6);
 --input-shading: rgba(255, 255, 255, 0.05);
@@ -86,8 +86,8 @@
 }
 
 /* =================================================================== */
-/* ADDITIONAL CSS BELOW HERE                      */
-/* (V15 & V16 & V17 最終合併版)                     */
+/* ADDITIONAL CSS BELOW HERE                      */
+/* (V15 & V16 & V17 最終合併版)                     */
 /* =================================================================== */
 
 /* --- 未讀/新徽章背景修正 (紅色) --- */
@@ -95,442 +95,454 @@
 .textBadge__0034b,
 .mention__3b95d,
 a[href="/store/nitro"] > div[class*="notice-"] {
-    background-color: var(--danger-color) !important;
-    color: #fff !important;
-    border: none !important;
+    background-color: var(--danger-color) !important;
+    color: #fff !important;
+    border: none !important;
 }
 
 /* --- 朋友列表 Tab Bar (Online/All/Pending) 樣式修正 --- */
 .peopleColumn__133bf .top_b3f026 {
-    background-color: transparent !important; /* 整個容器透明 */
+    background-color: transparent !important; /* 整個容器透明 */
 }
 .peopleColumn__133bf .top_b3f026 .item_b3f026 {
-    color: var(--text-muted) !important;
-    background-color: transparent !important;
+    color: var(--text-muted) !important;
+    background-color: transparent !important;
 }
 .peopleColumn__133bf .top_b3f026 .item_b3f026.selected_b3f026 {
-    color: var(--text-normal) !important;
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    border-radius: 4px;
+    color: var(--text-normal) !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 4px;
 }
 .peopleColumn__133bf .top_b3f026 .item_b3f026:hover {
-    color: var(--text-normal) !important;
-    background-color: rgba(0, 0, 0, 0.15) !important;
-    border-radius: 4px;
+    color: var(--text-normal) !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    border-radius: 4px;
 }
 
 /* --- User Settings & DM 左側選擇列 (紅色高亮) --- */
 .standardSidebarView__23e6b .navItem__551b0.selected__551b0:after {
-    background: var(--danger-color) !important;
+    background: var(--danger-color) !important;
 }
 .privateChannels__35e86 .interactive__972a0.interactiveSelected__972a0::before {
-    background: var(--danger-color) !important;
+    background: var(--danger-color) !important;
 }
 
 /* --- "Active Now" 背景 (完全透明) --- */
 .nowPlayingColumn__133bf {
-    background-color: transparent !important;
-    border: none !important;
+    background-color: transparent !important;
+    border: none !important;
 }
 .nowPlayingColumn__133bf .container__7d20c {
-    background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 /* --- 按鈕與搜尋框透明化 --- */
 .button__201d5.lookFilled__201d5.colorBrand__201d5,
 .button__201d5.lookFilled__201d5.colorPrimary__201d5 {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .button__201d5.lookFilled__201d5.colorBrand__201d5:hover,
 .button__201d5.lookFilled__201d5.colorPrimary__201d5:hover {
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
 }
 div[class^="searchBar-"] {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
 }
 
 /* --- 其他介面細節 (保留) --- */
 .winButtons_c38106 { display: none; }
 pre > code, code.inline {
-    background-color: rgba(10, 10, 12, 0.7) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background-color: rgba(10, 10, 12, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 .guilds_c48ade .circleIconButton__5bc7e {
-    background-color: rgba(30, 31, 34, 0.7) !important;
+    background-color: rgba(30, 31, 34, 0.7) !important;
 }
 .panels_c48ade .button_e131a9 {
-    background-color: rgba(30, 31, 34, 0.7) !important;
+    background-color: rgba(30, 31, 34, 0.7) !important;
 }
 .iconBadge__2b1f5 {
-    background-color: rgba(22, 22, 25, 0.9) !important;
-    box-shadow: 0 0 4px rgba(0,0,0,0.7) !important;
+    background-color: rgba(22, 22, 25, 0.9) !important;
+    box-shadow: 0 0 4px rgba(0,0,0,0.7) !important;
 }
 
 /* --- 反白文字顏色修正 (保留) --- */
 ::selection {
-    background: rgba(217, 32, 32, 0.5) !important;
-    color: #fff !important;
+    background: rgba(217, 32, 32, 0.5) !important;
+    color: #fff !important;
 }
 ::-moz-selection {
-    background: rgba(217, 32, 32, 0.5) !important;
-    color: #fff !important;
+    background: rgba(217, 32, 32, 0.5) !important;
+    color: #fff !important;
 }
 
 /* --- 聊天室內提示列 (保留) --- */
 .newMessagesBar__0f481 {
-    background-color: #d92020 !important;
+    background-color: #d92020 !important;
 }
 .newMessagesBar__0f481 a {
-    color: #c756f8 !important;
-    font-weight: 600 !important;
+    color: #c756f8 !important;
+    font-weight: 600 !important;
 }
 
 /* --- 頻道列表未讀文字 (保留) --- */
 .modeUnreadImportant__2ea32 .name__2ea32 {
-    color: var(--danger-color) !important;
+    color: var(--danger-color) !important;
 }
 
 /* --- 伺服器頻道列表中的「New Unreads」提示列 (V15 新增) --- */
 .bar__3b95d.unreadBar__629e4 {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 .bar__3b95d.unreadBar__629e4 .text__3b95d {
-    color: #fff !important;
+    color: #fff !important;
 }
 
 /* --- 斜線指令選單背景 (V15 新增) --- */
 .wrapper__14245.categoryHeader_d1405b {
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
 }
 .autocomplete__13533 .selected__1a58a {
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 /* --- Hashtag & Search Filter 相關元素 (V16 修改) --- */
 .searchFilter_bd8186, /* V16 新增 */
 .searchAnswer_bd8186 {
-    background-color: var(--danger-color) !important;
-    color: #fff !important;
-    padding: 0 6px;
-    border-radius: 4px;
+    background-color: var(--danger-color) !important;
+    color: #fff !important;
+    padding: 0 6px;
+    border-radius: 4px;
 }
 
 /* 聊天室中的 Hashtag 頻道連結 (背景改為實心紅、文字改為白) */
 .channelMention.wrapper_f61d60 {
-    background-color: var(--danger-color) !important; /* 直接使用您的紅色變數 */
-    color: #fff !important; /* #fff 代表白色 */
-    font-weight: 500;
-    padding: 1px 4px;
-    border-radius: 4px;
+    background-color: var(--danger-color) !important; /* 直接使用您的紅色變數 */
+    color: #fff !important; /* #fff 代表白色 */
+    font-weight: 500;
+    padding: 1px 4px;
+    border-radius: 4px;
 }
 .channelMention.wrapper_f61d60:hover {
-    background-color: var(--hover-color) !important; /* 滑鼠懸停時使用您定義的 hover-color */
+    background-color: var(--hover-color) !important; /* 滑鼠懸停時使用您定義的 hover-color */
 }
 .channelMention.wrapper_f61d60 .icon_c76ab6 {
-    color: #fff !important; /* 讓小箭頭也變成白色，才能看清楚 */
+    color: #fff !important; /* 讓小箭頭也變成白色，才能看清楚 */
 }
 
 /* --- 特定文字輸入區塊改為半透明背景 (V17 新增) --- */
 .vc-settings-theme-links {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* --- 將 "Live" 狀態徽章的背景改為 danger-color --- */
 .live_a7acae.textBadge__2b1f5 {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 
 /* --- 將「New Messages」分隔線改為紅色 --- */
 /* 針對分隔線本身 */
 .divider__5126c.isUnread__908e2 {
-    border-color: var(--danger-color) !important;
+    border-color: var(--danger-color) !important;
 }
 
 /* 針對 "new" 藥丸圖示和文字 */
 .isUnread__908e2 .unreadPill__908e2 {
-    color: var(--danger-color) !important;
+    color: var(--danger-color) !important;
 }
 
 /* =================================================================== */
-/* V18 修正 (2025-06-23)                       */
+/* V18 修正 (2025-06-23)                       */
 /* =================================================================== */
 
 /* --- 1. 將 "Try out Nitro" 的背景改為半透明 --- */
 .premiumBackground__65c15 {
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
 }
 
 /* --- 2. 將 "Go to Shop" 按鈕背景改為預設的半透明深色 --- */
 .ctaButton__8279f {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .ctaButton__8279f:hover {
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 /* --- 3. 將特定核取方塊(checkbox)改為預設樣式 --- */
 /* 這個選擇器專門針對您提供的核取方塊 */
 .container__87bf1.checked__87bf1 {
-    background: var(--danger-color) !important; /* 使用一個中性的深灰色 */
+    background: var(--danger-color) !important; /* 使用一個中性的深灰色 */
 }
 
 /* --- 4. 將特定 session 圖示改為預設樣式 --- */
 .sessionIcon__803f2 {
-    background-color: #4f545c !important; /* 使用一個中性的深灰色 */
+    background-color: #4f545c !important; /* 使用一個中性的深灰色 */
 }
 
 /* --- 5. 將 Shiny Button (例如 "Subscribe") 改為預設樣式 --- */
 .shinyButton__6a443 {
-    background: rgba(0, 0, 0, 0.2) !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    text-shadow: none !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    text-shadow: none !important;
 }
 .shinyButton__6a443:hover {
-    background: rgba(0, 0, 0, 0.4) !important;
+    background: rgba(0, 0, 0, 0.4) !important;
 }
 
 /* --- 6. 將 Radio Bar (單選項目) 的選中背景改為紅色 --- */
 .item__001a7[aria-checked=true] .radioBar__001a7 {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 
 /* --- 7. 將 "Donate" 按鈕背景改為紅色 --- */
 /* 這個規則專門針對包含 "vc-donate-button" 的白色按鈕 */
 button.colorWhite__201d5:has(.vc-donate-button) {
-    background-color: var(--danger-color) !important;
-    color: white !important;
+    background-color: var(--danger-color) !important;
+    color: white !important;
 }
 button.colorWhite__201d5:has(.vc-donate-button):hover {
-    background-color: var(--hover-color) !important;
+    background-color: var(--hover-color) !important;
 }
 
 /* --- 將 "Beta" 徽章背景改為紅色 --- */
 .beta__5ce63.textBadge__2b1f5 {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 
 /* =================================================================== */
-/* V19 新增修正                               */
+/* V19 新增修正                               */
 /* =================================================================== */
 
 /* --- 1. "AKA" 徽章背景改為紅色 --- */
 .akaBadge__488b1 {
-    background-color: var(--danger-color) !important;
-    color: #fff !important;
+    background-color: var(--danger-color) !important;
+    color: #fff !important;
 }
 
 /* --- 2. 將 @Role 提及改成跟 #channel 提及一樣 --- */
 .roleMention__75297.wrapper_f61d60 {
-    background-color: hsla(from var(--danger-color) h s l / 0.3) !important;
-    color: var(--danger-color) !important;
-    font-weight: 500;
-    padding: 1px 4px;
-    border-radius: 4px;
+    background-color: hsla(from var(--danger-color) h s l / 0.3) !important;
+    color: var(--danger-color) !important;
+    font-weight: 500;
+    padding: 1px 4px;
+    border-radius: 4px;
 }
 .roleMention__75297.wrapper_f61d60:hover {
-    background-color: hsla(from var(--danger-color) h s l / 0.5) !important;
+    background-color: hsla(from var(--danger-color) h s l / 0.5) !important;
 }
 
 /* --- 3. "in Voice" 提示列背景改為紅色 --- */
 .bar__7aaec.voiceBar__7aaec {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 .bar__7aaec.voiceBar__7aaec .barText__7aaec {
-    color: #fff !important;
+    color: #fff !important;
 }
 
 /* --- 將 "New Mentions" 提示列背景改為紅色 --- */
 .bar__7aaec {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 
 .bar__7aaec .barText__7aaec {
-    color: #fff !important;
+    color: #fff !important;
 }
 
 /* =================================================================== */
-/* V21 新增修正                               */
+/* V21 新增修正                               */
 /* =================================================================== */
 
 /* --- 將 @User 提及改成跟 #channel / @Role 提及一樣 --- */
 span.mention.wrapper_f61d60 {
-    background-color: hsla(from var(--danger-color) h s l / 0.3) !important;
-    color: var(--danger-color) !important;
-    font-weight: 500;
-    padding: 1px 4px;
-    border-radius: 4px;
+    background-color: hsla(from var(--danger-color) h s l / 0.3) !important;
+    color: var(--danger-color) !important;
+    font-weight: 500;
+    padding: 1px 4px;
+    border-radius: 4px;
 }
 span.mention.wrapper_f61d60:hover {
-    background-color: hsla(from var(--danger-color) h s l / 0.5) !important;
+    background-color: hsla(from var(--danger-color) h s l / 0.5) !important;
 }
 
 /* --- 將下拉選單中的「選擇項目」背景改為紅色 --- */
 .option__3f413[aria-selected=true] {
-    background-color: var(--danger-color) !important;
-    color: #fff !important; /* 同時將文字改為白色以利閱讀 */
+    background-color: var(--danger-color) !important;
+    color: #fff !important; /* 同時將文字改為白色以利閱讀 */
 }
 /* 同時修正選擇項目中的打勾圖示顏色 */
 .option__3f413[aria-selected=true] .selectedIcon__3f413 {
-    color: #fff !important;
+    color: #fff !important;
 }
 
 /* =================================================================== */
-/* V23 新增修正                               */
+/* V23 新增修正                               */
 /* =================================================================== */
 
 /* --- 將 "new" 文字徽章背景改為紅色 --- */
 .newBadge__4ed1a {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 
 /* --- 將「最近提及」中的頻道標頭背景改為紅色 --- */
 .channelHeader__35a7e {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 /* 同時將標頭內的文字和圖示改為白色，確保清晰可見 */
 .channelHeader__35a7e .channelNameSpan__35a7e,
 .channelHeader__35a7e .subtext__35a7e {
-    color: #fff !important;
+    color: #fff !important;
 }
 .channelHeader__35a7e .channelName__35a7e svg path {
-    fill: #fff !important;
+    fill: #fff !important;
 }
 
 /* =================================================================== */
-/* V24 新增修正 (表情符號選擇器)             */
+/* V24 新增修正 (表情符號選擇器)             */
 /* =================================================================== */
 
 /* --- 1. 將被選中的表情符號分頁 (如 "Emoji") 背景改為紅色 --- */
 .navButton__08434.navButtonActive__08434 {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 
 /* --- 2. 將表情符號類別標頭 (如 "Favorites") 背景改為紅色 --- */
 .wrapper__14245.header_c656ac {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 /* 同時將標頭內的文字和圖示改為白色，確保清晰可見 */
 .wrapper__14245.header_c656ac .headerLabel__14245,
 .wrapper__14245.header_c656ac .headerIcon__14245 path,
 .wrapper__14245.header_c656ac .headerCollapseIcon__14245 path {
-    color: #fff !important;
-    fill: #fff !important;
+    color: #fff !important;
+    fill: #fff !important;
 }
 
 /* --- 3. 將被選中的表情符號類別圖示 (下方或側方) 背景改為紅色 --- */
 .categoryItemDefaultCategorySelected_b9ee0c {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 
 /* =================================================================== */
-/* V25 新增修正 (表情/貼圖選擇器)          */
+/* V25 新增修正 (表情/貼圖選擇器)          */
 /* =================================================================== */
 
 /* --- 1. 將表情符號選擇器中的漸層背景改為紅色 --- */
 .categoryFadeBlurple_d02962 {
-    background: var(--danger-color) !important;
+    background: var(--danger-color) !important;
 }
 
 /* --- 2. 將貼圖包標頭 (Pack Header) 背景改為紅色 --- */
 .wrapper__14245.packHeader_e94b8c {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 /* 同時將標頭內的文字和圖示改為白色 */
 .wrapper__14245.packHeader_e94b8c .headerLabel__14245,
 .wrapper__14245.packHeader_e94b8c .headerIcon__14245 path,
 .wrapper__14245.packHeader_e94b8c .headerCollapseIcon__14245 path {
-    color: #fff !important;
-    fill: #fff !important;
+    color: #fff !important;
+    fill: #fff !important;
 }
 
 /* --- 3. 將被選中的貼圖類別圖示背景改為紅色 --- */
 .stickerCategoryGenericSelected__3ad28 {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 
 /* --- 將載入中的點點 (...) 改為紫色 --- */
 .spinner__0b5bb .item__0b5bb {
-    background-color: #8A2BE2 !important; /* 您可以換成任何喜歡的紫色 */
+    background-color: #8A2BE2 !important; /* 您可以換成任何喜歡的紫色 */
 }
 
 
 /* =================================================================== */
-/* V26 新增修正 (Quest/禮物箱)                 */
+/* V26 新增修正 (Quest/禮物箱)                 */
 /* =================================================================== */
 
 /* --- 將「任務/促銷」方塊背景改為紅色 --- */
 .wrapper__960df {
-    background-color: var(--danger-color) !important;
+    background-color: var(--danger-color) !important;
 }
 
 /* 同時將方塊內的文字改為白色，確保清晰可見 */
 .wrapper__960df .headingCopy__960df h2,
 .wrapper__960df .instructions__960df div,
 .wrapper__960df .headingCopy__960df div {
-    color: #fff !important;
+    color: #fff !important;
 }
 
 
 /* =================================================================== */
-/* Discord 更新修復 (2025-11-03 v3 - 最終版)    */
+/* Discord 更新修復 (2025-11-03 v3 - 最終版)    */
 /* =================================================================== */
 
 /* 1. 移除整個側邊欄的最外層背景 (新 class) */
 .sidebar__5e434 {
-    background: transparent !important;
+    background: transparent !important;
 }
 
 /* 2. 移除伺服器列表的背景 (新 class，舊的是 guilds_c48ade) */
 .guilds__5e434 {
-    background: transparent !important;
+    background: transparent !important;
 }
 
 /* 3. 移除私訊列表區域的背景 (新 class，舊的是 privateChannels__35e86) */
 .sidebarList__5e434,
 .privateChannels_e6b769 {
-    background: transparent !important;
+    background: transparent !important;
 }
 
 /* 4. 移除你主題 main.css 檔案 增加的滾動區域半透明背景 */
 .scrollerBase_d125d2 {
-    background: transparent !important;
+    background: transparent !important;
 }
 
 /* 5. 確保伺服器列表的滾動區域也是透明的 (新 class) */
 .scroller_ef3116 {
-    background: transparent !important;
+    background: transparent !important;
 }
 
 
 /* =================================================================== */
-/* V-Fix: 修復私訊列表選中項目 (Friends)         */
+/* V-Fix: 修復私訊列表選中項目 (Friends)         */
 /* =================================================================== */
 
 /* 檔案中的 .privateChannels__35e86 規則已失效。
-  使用新的父層 .privateChannels_e6b769，
-  並鎖定 HTML 中的 .interactiveSelected__972a0 類別，
-  將 main.css 產生的 ::before 虛擬元素背景從白色改為紅色。
+  使用新的父層 .privateChannels_e6b769，
+  並鎖定 HTML 中的 .interactiveSelected__972a0 類別，
+  將 main.css 產生的 ::before 虛擬元素背景從白色改為紅色。
 */
 .privateChannels_e6b769 .interactive__972a0.interactiveSelected__972a0::before {
-    background: var(--danger-color) !important;
+    background: var(--danger-color) !important;
 }
 
+/* =================================================================== */
+/* 🔎 搜尋篩選器彈出窗口 背景修復 (針對透明背景問題) 💡 */
+/* =================================================================== */
 
-/* 搜尋過濾器彈出窗口的背景 */
-.popout__6e520, /* 嘗試這個主要 popout class */
-.container__8f6d6, /* 某些情況下是這個 */
-.searchFilter__41d5b, /* 嘗試這個，雖然有時會變 */
-div[class^="searchFilter-"], /* 模糊匹配整個過濾器 */
-div[class^="popout-"], /* 模糊匹配所有 popout */
-div[class*="searchPopout"] /* 模糊匹配包含 'searchPopout' 的 class */
+/* 針對所有以 "popout-" 或 "searchPopout-" 開頭的新容器 class (模糊匹配) */
+/* 使用主題內建的 --popout-shading (rgba(0, 0, 0, 0.7)) 作為半透明背景 */
+div[class^="popout-"], 
+div[class^="searchPopout-"]
 {
-    /* 這裡替換成你想要的黑色半透明背景 */
-    background-color: rgba(0, 0, 0, 0.8) !important; 
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    border-radius: 4px !important;
+    background-color: var(--hsl-popout-shading) !important; /* 強制使用您主題的半透明深色背景 */
+    border: none !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) !important; /* 增加陰影以提供視覺區隔 */
+    border-radius: 8px !important;
+}
+
+/* 確保 Popout 內部的日期選擇器等複雜元件也使用正確的 Popout 背景 */
+.react-datepicker__portal div[class*="popout-"] {
+    background-color: var(--hsl-popout-shading) !important;
+}
+
+/* 確保文字不會因為透明背景而難以閱讀 */
+div[class^="popout-"] *,
+div[class^="searchPopout-"] * {
+    /* 使用主題內建的文字顏色變量，確保文字清晰 (在您的設定中是 #d8d8db) */
+    color: var(--text-default) !important; 
 }
