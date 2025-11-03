@@ -519,3 +519,18 @@ span.mention.wrapper_f61d60:hover {
 .privateChannels_e6b769 .interactive__972a0.interactiveSelected__972a0::before {
     background: var(--danger-color) !important;
 }
+
+
+/* 搜尋過濾器彈出窗口的背景 */
+.popout__6e520, /* 嘗試這個主要 popout class */
+.container__8f6d6, /* 某些情況下是這個 */
+.searchFilter__41d5b, /* 嘗試這個，雖然有時會變 */
+div[class^="searchFilter-"], /* 模糊匹配整個過濾器 */
+div[class^="popout-"], /* 模糊匹配所有 popout */
+div[class*="searchPopout"] /* 模糊匹配包含 'searchPopout' 的 class */
+{
+    /* 這裡替換成你想要的黑色半透明背景 */
+    background-color: rgba(0, 0, 0, 0.8) !important; 
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 4px !important;
+}
