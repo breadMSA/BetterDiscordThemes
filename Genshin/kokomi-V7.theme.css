@@ -134,27 +134,32 @@
 }
 
 /* =================================================================== */
-/* 🔎 搜尋篩選器彈出窗口 背景修復 (使用您主題的 --popout-shading) */
+/* 🔎 搜尋篩選器彈出窗口 背景修復 (針對透明背景問題) 💡 */
+/* 這是上次經您確認可運作的代碼，確保優先級最高 */
 /* =================================================================== */
 
-/* 針對所有以 "popout-" 或 "searchPopout-" 開頭的容器 */
+/* 針對所有以 "popout-" 或 "searchPopout-" 開頭的新容器 class (模糊匹配) */
 div[class^="popout-"], 
 div[class^="searchPopout-"]
 {
-    /* 使用您主題中正確定義的變數進行背景覆蓋 */
-    background-color: var(--popout-shading) !important; 
-    background: var(--popout-shading) !important;
+    /* 強制使用 ClearVision 轉換後的半透明深色背景 */
+    background-color: var(--hsl-popout-shading) !important; 
+    background: var(--hsl-popout-shading) !important; /* 確保所有 background 屬性都被覆蓋 */
+    backdrop-filter: blur(0px) !important; /* 移除可能導致穿透的濾鏡 */
     
-    /* 確保內層元素（如日期選擇器、選項內容）背景也一致 */
-    & * {
-        background-color: var(--popout-shading) !important;
-    }
-
-    /* 確保文字清晰 (使用您主題的 --normal-text) */
-    color: var(--normal-text) !important;
-    
-    /* 增加陰影和圓角，提供視覺區隔 */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) !important; 
-    border-radius: 8px !important;
     border: none !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) !important;
+    border-radius: 8px !important;
+}
+
+/* 確保 Popout 內部的日期選擇器等複雜元件也使用正確的 Popout 背景 */
+.react-datepicker__portal div[class*="popout-"] {
+    background-color: var(--hsl-popout-shading) !important;
+}
+
+/* 確保文字不會因為透明背景而難以閱讀 */
+div[class^="popout-"] *,
+div[class^="searchPopout-"] * {
+    /* 使用主題內建的文字顏色變量，確保文字清晰 */
+    color: var(--text-default) !important; 
 }
