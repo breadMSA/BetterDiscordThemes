@@ -521,29 +521,34 @@ span.mention.wrapper_f61d60:hover {
 }
 
 /* =================================================================== */
-/* 🔎 搜尋篩選器彈出窗口 背景修復 (針對透明背景問題) 💡 */
+/* 🔎 搜尋篩選器彈出窗口 背景修復 (V2 - 使用你自定義的變數) 💡 */
 /* =================================================================== */
 
-/* 針對所有以 "popout-" 或 "searchPopout-" 開頭的新容器 class (模糊匹配) */
-/* 使用主題內建的 --popout-shading (rgba(0, 0, 0, 0.7)) 作為半透明背景 */
+/* * V1 的 var(--hsl-popout-shading) 可能失效。
+ * V2 改為直接使用你在 :is(.theme-dark) 中定義的 --popout-shading 變數。
+ * 並且也直接使用你定義的 --normal-text 變數。
+ * * 我也額外加入了 [class*="quickSwitcher-"] 來修復 Ctrl+K 的快速切換選單。
+ */
+
 div[class^="popout-"], 
-div[class^="searchPopout-"]
+div[class^="searchPopout-"],
+div[class*="quickSwitcher-"] /* 修復 Ctrl+K 的快速切換選單 */
 {
-    background-color: var(--hsl-popout-shading) !important; /* 強制使用您主題的半透明深色背景 */
+    background-color: var(--popout-shading) !important; /* V2: 改用這個你定義的變數 */
     border: none !important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) !important; /* 增加陰影以提供視覺區隔 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) !important;
     border-radius: 8px !important;
 }
 
 /* 確保 Popout 內部的日期選擇器等複雜元件也使用正確的 Popout 背景 */
 .react-datepicker__portal div[class*="popout-"] {
-    background-color: var(--hsl-popout-shading) !important;
+    background-color: var(--popout-shading) !important; /* V2: 改用這個你定義的變數 */
 }
 
-/* 確保文字不會因為透明背景而難以閱讀 */
+/* 確保 Popout 內部的文字顏色正確 */
 div[class^="popout-"] *,
-div[class^="searchPopout-"] * {
-    /* 使用主題內建的文字顏色變量，確保文字清晰 (在您的設定中是 #d8d8db) */
-    color: var(--text-default) !important; 
+div[class^="searchPopout-"] *,
+div[class*="quickSwitcher-"] *
+{
+    color: var(--normal-text) !important; /* V2: 改用這個你定義的變數 */
 }
-
